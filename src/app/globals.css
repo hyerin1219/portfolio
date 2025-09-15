@@ -42,8 +42,21 @@ body {
   color: #fff;
 }
 
+main {
+  max-width: 1100px;
+  margin: 10px auto;
+  padding: 0 1%;
+
+}
+
 a,
 button {
   display: inline-block;
   cursor: pointer;
+}
+
+i,
+em,
+b {
+  font-style: normal;
 }
