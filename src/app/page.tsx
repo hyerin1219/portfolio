@@ -15,7 +15,7 @@ export default function Home() {
     }, []);
 
     return (
-        <div className="p-10 py-10 w-full">
+        <div className="md:p-10 p-5 py-10 w-full">
             <AboutMe />
 
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 3, duration: 1.5 }}>

@@ -47,50 +47,50 @@ export function Travel_diary() {
                     </div>
                 </div>
                 {/* 깃 / figma */}
-                <div className="flex items-center justify-between text-sm">
-                    <Link className="relative w-[49%] min-h-[100px] bg-[#D9D9D9] rounded p-2 pt-10 text-center" href="https://github.com/calmer-ty/travel-diary" target="_blank">
-                        <img className="absolute top-2 left-2 h-6" src="image/ico_github.png" alt="출처: figma" />
-                        https://github.com/calmer-ty/travel-diary
+                <div className="flex items-center justify-between ">
+                    <Link className="w-[49%] h-[70px] md:h-[90px] p-3 bg-[#D9D9D9] rounded text-center" href="https://github.com/calmer-ty/travel-diary" target="_blank">
+                        <img className="h-6" src="image/ico_github.png" alt="출처: figma" />
+                        <span>github 가기</span>
                     </Link>
 
-                    <Link className="relative w-[49%] min-h-[100px] bg-[#D9D9D9] rounded p-2 pt-10 text-center" href="https://figmashort.link/H7KYhZ" target="_blank">
-                        <img className="absolute top-2 left-2 h-6" src="image/ico_figma.png" alt="출처: figma" />
-                        https://figmashort.link/H7KYhZ
+                    <Link className="w-[49%] h-[70px] md:h-[90px] p-3 bg-[#D9D9D9] rounded text-center" href="https://figmashort.link/H7KYhZ" target="_blank">
+                        <img className="h-6" src="image/ico_figma.png" alt="출처: figma" />
+                        <span>figma 가기</span>
                     </Link>
                 </div>
                 {/* 개인 기여 내용 */}
                 <div>
                     <p className="text-[#519AD6] font-bold text-xl">개인 기여 내용</p>
 
-                    <div className="flex flex-wrap gap-3">
-                        <div className="w-[49%]">
-                            <img src="/image/travel_diary/img_main.png" alt="" />
+                    <div className="flex flex-wrap justify-center gap-5">
+                        <div className="w-[100%] md:w-[48%] ">
+                            <img className="w-full inline-block" src="/image/travel_diary/img_main.png" alt="" />
                             <p>1. 메인 화면</p>
                         </div>
 
-                        <div className="w-[49%]">
-                            <img src="/image/travel_diary/img_main.png" alt="" />
+                        <div className="w-[100%] md:w-[48%]">
+                            <img className="w-full inline-block" src="/image/travel_diary/img_main.png" alt="" />
                             <p>2. 구글 지도 POI 데이터 출력</p>
                             <p>3. POI 모달창(여행 일기) form 데이터 저장, 삭제</p>
                         </div>
 
-                        <div className="w-[49%]">
-                            <img src="/image/travel_diary/img_main.png" alt="" />
+                        <div className="w-[100%] md:w-[48%]">
+                            <img className="w-full inline-block" src="/image/travel_diary/img_main.png" alt="" />
                             <p>4. 북마크(여행 일기 제목) 모달 창</p>
                         </div>
 
-                        <div className="w-[49%]">
-                            <img src="/image/travel_diary/img_main.png" alt="" />
+                        <div className="w-[100%] md:w-[48%]">
+                            <img className="w-full inline-block" src="/image/travel_diary/img_main.png" alt="" />
                             <p>5. 오류 알럿창</p>
                         </div>
 
-                        <div className="w-[49%]">
-                            <img src="/image/travel_diary/img_main.png" alt="" />
+                        <div className="w-[100%] md:w-[48%]">
+                            <img className="w-full inline-block" src="/image/travel_diary/img_main.png" alt="" />
                             <p>6. 주사위 굴리기</p>
                         </div>
 
-                        <div className="w-[49%]">
-                            <img src="/image/travel_diary/img_main.png" alt="" />
+                        <div className="w-[100%] md:w-[48%]">
+                            <img className="w-full inline-block" src="/image/travel_diary/img_main.png" alt="" />
                             <p>7. 롤렛 돌리기</p>
                         </div>
                     </div>
@@ -151,8 +151,8 @@ export function Travel_diary() {
                     <p className="text-[#519AD6] font-bold text-xl">느낀점</p>
 
                     <div>
-                        <p>리팩토링 과정에서 로직을 분리하고 상태를 명확히 관리하는 중요성을 깨달음</p>
-                        <p>공통된 로직이나 여러 곳에서 쓰일 기능을 Hook으로 관리하니 편리하고 재사용성이 높아짐</p>
+                        <p>- 리팩토링 과정에서 로직을 분리하고 상태를 명확히 관리하는 중요성을 깨달음</p>
+                        <p>- 공통된 로직이나 여러 곳에서 쓰일 기능을 Hook으로 관리하니 편리하고 재사용성이 높아짐</p>
                     </div>
                 </div>
             </div>
