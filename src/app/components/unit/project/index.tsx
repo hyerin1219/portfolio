@@ -30,7 +30,7 @@ export default function Project() {
             <div className="flex flex-wrap justify-between gap-2 md:gap-0">
                 {Object.keys(Projects).map((projectName) => {
                     return (
-                        <button key={projectName} onClick={() => handleClick(projectName)} className="w-[49%] border rounded-lg text-center py-5 hover:bg-gray-100 md:w-[24%]">
+                        <button key={projectName} onClick={() => handleClick(projectName)} className="w-[49%] border rounded-lg text-center py-5 hover:bg-gray-100 md:w-[24%] hover:text-[#000]">
                             {projectName}
                         </button>
                     );
