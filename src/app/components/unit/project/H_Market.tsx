@@ -56,27 +56,27 @@ export function H_Market() {
 
                     <div className="flex flex-wrap justify-center gap-5">
                         <div className="w-[100%] md:w-[48%] ">
-                            <img className="w-full inline-block" src="/image/h_market/img01.png" alt="" />
+                            <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/h_market/img01.png" alt="" />
                             <p>1. form을 이용한 로그인 기능</p>
                         </div>
 
                         <div className="w-[100%] md:w-[48%]">
-                            <img className="w-full inline-block" src="/image/h_market/img04.png" alt="" />
+                            <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/h_market/img04.png" alt="" />
                             <p>2. 게시물 등록, 수정, 삭제</p>
                         </div>
 
                         <div className="w-[100%] md:w-[48%]">
-                            <img className="w-full inline-block" src="/image/h_market/img05.png" alt="" />
+                            <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/h_market/img05.png" alt="" />
                             <p>3. 게시물 검색 기능</p>
                         </div>
 
                         <div className="w-[100%] md:w-[48%]">
-                            <img className="w-full inline-block" src="/image/h_market/img02.png" alt="" />
+                            <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/h_market/img02.png" alt="" />
                             <p>4. 상품 등록, 수정, 삭제</p>
                         </div>
 
                         <div className="w-[100%] md:w-[48%]">
-                            <img className="w-full inline-block" src="/image/h_market/img06.png" alt="" />
+                            <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/h_market/img06.png" alt="" />
                             <p>5. 등록된 상품 무한스크롤</p>
                         </div>
                     </div>

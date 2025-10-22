@@ -65,28 +65,28 @@ export function BookPath() {
 
                     <div className="flex flex-wrap justify-center gap-5">
                         <div className="w-[100%] md:w-[48%] ">
-                            <img className="w-full inline-block" src="/image/book_path/img_main.png" alt="" />
+                            <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/book_path/img_main.png" alt="" />
                             <p>1. 메인 화면</p>
                         </div>
 
                         <div className="w-[100%] md:w-[48%] ">
-                            <img className="w-full inline-block" src="/image/book_path/img03.png" alt="" />
+                            <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/book_path/img03.png" alt="" />
                             <p>2. naver 검색 api를 통해 책 검색</p>
                             <p>3. 페이지네이션</p>
                         </div>
 
                         <div className="w-[100%] md:w-[48%]">
-                            <img className="w-full inline-block" src="/image/book_path/img04.png" alt="" />
+                            <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/book_path/img04.png" alt="" />
                             <p>4. 책 클릭 시 책 정보 모달</p>
                         </div>
 
                         <div className="w-[100%] md:w-[48%]">
-                            <img className="w-full inline-block" src="/image/book_path/img01.png" alt="" />
+                            <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/book_path/img01.png" alt="" />
                             <p>5. 독후감 등록, 수정, 삭제</p>
                         </div>
 
                         <div className="w-[100%] md:w-[48%]">
-                            <img className="w-full inline-block" src="/image/book_path/img02.png" alt="" />
+                            <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/book_path/img02.png" alt="" />
                             <p>6. 내가 등록한 독후감 보기</p>
                         </div>
                     </div>

@@ -57,22 +57,22 @@ export function GMoney() {
 
                     <div className="flex flex-wrap justify-center gap-5">
                         <div className="w-[100%] md:w-[48%] ">
-                            <img className="w-full inline-block" src="/image/g_money/img_main.png" alt="" />
+                            <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/g_money/img_main.png" alt="" />
                             <p>1. 메인 화면</p>
                         </div>
 
                         <div className="w-[100%] md:w-[48%] ">
-                            <img className="w-full inline-block" src="/image/g_money/img02.png" alt="" />
+                            <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/g_money/img02.png" alt="" />
                             <p>2. 카카오 로그인 api 사용하여 로그인 구현</p>
                         </div>
 
                         <div className="w-[100%] md:w-[48%]">
-                            <img className="w-full inline-block" src="/image/g_money/img01.png" alt="" />
+                            <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/g_money/img01.png" alt="" />
                             <p>3. 차별거래 신고</p>
                         </div>
 
                         <div className="w-[100%] md:w-[48%]">
-                            <img className="w-full inline-block" src="/image/g_money/img03.png" alt="" />
+                            <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/g_money/img03.png" alt="" />
                             <p>4. 경기지역화폐 가맹점 리스트</p>
                         </div>
                     </div>

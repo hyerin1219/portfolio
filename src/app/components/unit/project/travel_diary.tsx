@@ -27,7 +27,9 @@ export function Travel_diary() {
                 <div>
                     <p className="text-[#519AD6] font-bold text-xl">URL</p>
 
-                    <Link href="https://travel-diary.hyerin.store">https://travel-diary.hyerin.store</Link>
+                    <Link target="_blank" href="https://travel-diary.hyerin.store">
+                        https://travel-diary.hyerin.store
+                    </Link>
                 </div>
 
                 {/* 스킬 */}
@@ -70,34 +72,34 @@ export function Travel_diary() {
                     <p className="text-[#519AD6] font-bold text-xl">개인 기여 내용</p>
 
                     <div className="flex flex-wrap justify-center gap-5">
-                        <div className="w-[100%] md:w-[48%] ">
-                            <img className=" w-full inline-block" src="/image/travel_diary/img_main.png" alt="" />
+                        <div className="w-[100%] md:w-[48%]">
+                            <img className=" w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/travel_diary/img_main.png" alt="" />
                             <p>1. 메인 화면</p>
                         </div>
 
                         <div className="w-[100%] md:w-[48%]">
-                            <img className="w-full inline-block" src="/image/travel_diary/img01.png" alt="" />
+                            <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/travel_diary/img01.png" alt="" />
                             <p>2. 구글 지도 POI 데이터 출력</p>
                             <p>3. POI 모달창(여행 일기) form 데이터 저장, 삭제</p>
                         </div>
 
                         <div className="w-[100%] md:w-[48%]">
-                            <img className="w-full inline-block" src="/image/travel_diary/img02.png" alt="" />
+                            <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/travel_diary/img02.png" alt="" />
                             <p>4. 북마크(여행 일기 제목) 모달 창</p>
                         </div>
 
                         <div className="w-[100%] md:w-[48%]">
-                            <img className="w-full inline-block" src="/image/travel_diary/img06.png" alt="" />
+                            <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/travel_diary/img06.png" alt="" />
                             <p>5. 오류 알럿창</p>
                         </div>
 
                         <div className="w-[100%] md:w-[48%]">
-                            <img className="w-full inline-block" src="/image/travel_diary/img04.png" alt="" />
+                            <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/travel_diary/img04.png" alt="" />
                             <p>6. 주사위 굴리기</p>
                         </div>
 
                         <div className="w-[100%] md:w-[48%]">
-                            <img className="w-full inline-block" src="/image/travel_diary/img05.png" alt="" />
+                            <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/travel_diary/img05.png" alt="" />
                             <p>7. 롤렛 돌리기</p>
                         </div>
                     </div>
