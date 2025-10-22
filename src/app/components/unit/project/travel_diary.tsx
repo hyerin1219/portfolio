@@ -23,6 +23,13 @@ export function Travel_diary() {
 
                     <div>기획 - 20%, 디자인 - 80%, 개발 -50%</div>
                 </div>
+
+                <div>
+                    <p className="text-[#519AD6] font-bold text-xl">URL</p>
+
+                    <Link href="https://travel-diary.hyerin.store">https://travel-diary.hyerin.store</Link>
+                </div>
+
                 {/* 스킬 */}
                 <div>
                     <p className="text-[#519AD6] font-bold text-xl">스킬</p>
@@ -42,7 +49,7 @@ export function Travel_diary() {
                     <div>
                         <p>1.방문할 장소 또는 다녀온 장소를 지도에 마커로 표시</p>
                         <p>2.마커에 날짜, 장소 설명, 일기 제목을 함께 저장</p>
-                        <p> 3.작성한 일기를 한눈에 확인 가능</p>
+                        <p>3.작성한 일기를 한눈에 확인 가능</p>
                         <p>4.룰렛 돌리기 및 주사위 굴리기 게임으로 친구와 간단한 내기 가능</p>
                     </div>
                 </div>
@@ -64,33 +71,33 @@ export function Travel_diary() {
 
                     <div className="flex flex-wrap justify-center gap-5">
                         <div className="w-[100%] md:w-[48%] ">
-                            <img className="w-full inline-block" src="/image/travel_diary/img_main.png" alt="" />
+                            <img className=" w-full inline-block" src="/image/travel_diary/img_main.png" alt="" />
                             <p>1. 메인 화면</p>
                         </div>
 
                         <div className="w-[100%] md:w-[48%]">
-                            <img className="w-full inline-block" src="/image/travel_diary/img_main.png" alt="" />
+                            <img className="w-full inline-block" src="/image/travel_diary/img01.png" alt="" />
                             <p>2. 구글 지도 POI 데이터 출력</p>
                             <p>3. POI 모달창(여행 일기) form 데이터 저장, 삭제</p>
                         </div>
 
                         <div className="w-[100%] md:w-[48%]">
-                            <img className="w-full inline-block" src="/image/travel_diary/img_main.png" alt="" />
+                            <img className="w-full inline-block" src="/image/travel_diary/img02.png" alt="" />
                             <p>4. 북마크(여행 일기 제목) 모달 창</p>
                         </div>
 
                         <div className="w-[100%] md:w-[48%]">
-                            <img className="w-full inline-block" src="/image/travel_diary/img_main.png" alt="" />
+                            <img className="w-full inline-block" src="/image/travel_diary/img06.png" alt="" />
                             <p>5. 오류 알럿창</p>
                         </div>
 
                         <div className="w-[100%] md:w-[48%]">
-                            <img className="w-full inline-block" src="/image/travel_diary/img_main.png" alt="" />
+                            <img className="w-full inline-block" src="/image/travel_diary/img04.png" alt="" />
                             <p>6. 주사위 굴리기</p>
                         </div>
 
                         <div className="w-[100%] md:w-[48%]">
-                            <img className="w-full inline-block" src="/image/travel_diary/img_main.png" alt="" />
+                            <img className="w-full inline-block" src="/image/travel_diary/img05.png" alt="" />
                             <p>7. 롤렛 돌리기</p>
                         </div>
                     </div>
