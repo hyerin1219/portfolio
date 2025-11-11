@@ -89,6 +89,21 @@ export function BookPath() {
                             <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/book_path/img02.png" alt="" />
                             <p>6. 내가 등록한 독후감 보기</p>
                         </div>
+
+                        <div className="w-[100%] md:w-[48%]">
+                            <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/book_path/img05.png" alt="" />
+                            <p>7. 전체 책갈피 모임 / 내가 가입한 책갈피 모임 탭으로 구분</p>
+                        </div>
+
+                        <div className="w-[100%] md:w-[48%]">
+                            <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/book_path/img06.png" alt="" />
+                            <p>8. 책갈피 모임 등록</p>
+                        </div>
+
+                        <div className="w-[100%] md:w-[48%]">
+                            <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/book_path/img07.png" alt="" />
+                            <p>9. 책갈피 모임 게시글 등록, 수정, 삭제</p>
+                        </div>
                     </div>
                 </div>
                 {/* 오류 해결 */}
@@ -121,8 +136,8 @@ export function BookPath() {
                     <p className="text-[#519AD6] font-bold text-xl">향후 계획</p>
 
                     <div>
-                        <p>- 책갈피 모임 기능 추가</p>
-                        <p>- firebase function을 이용해 배포하기</p>
+                        <p>- 책갈피 모임에 댓글 기능 추가 예정</p>
+                        <p>- firebase function을 이용해 배포</p>
                     </div>
                 </div>
             </div>
