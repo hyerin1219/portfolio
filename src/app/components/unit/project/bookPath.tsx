@@ -9,7 +9,7 @@ export function BookPath() {
                 <div>
                     <p className="text-[#519AD6] font-bold text-xl">소개</p>
 
-                    <div>읽은 책을 선택해 점수를 매기고, 나만의 독후감을 작성할 수 있는 플렛폼을 제작했습니다.</div>
+                    <div>읽은 책을 선택하고 평가하며 독후감을 작성할 수 있고, 독서 모임을 생성하여 생각을 공유할 수 있는 플랫폼을 제작했습니다.</div>
                 </div>
                 {/* 기간 / 인원 */}
                 <div>
@@ -44,6 +44,7 @@ export function BookPath() {
                         <p>1.책 검색 기능</p>
                         <p>2.독후감 등록, 수정, 삭제 기능 </p>
                         <p>3.내가 쓴 독후감 모아 보기</p>
+                        <p>4.독서 모임</p>
                     </div>
                 </div>
                 {/* 깃 / figma */}
@@ -92,7 +93,7 @@ export function BookPath() {
 
                         <div className="w-[100%] md:w-[48%]">
                             <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/book_path/img05.png" alt="" />
-                            <p>7. 전체 책갈피 모임 / 내가 가입한 책갈피 모임 탭으로 구분</p>
+                            <p>7. 전체/내가 가입한 책갈피 모임 탭으로 구분</p>
                         </div>
 
                         <div className="w-[100%] md:w-[48%]">
@@ -137,7 +138,7 @@ export function BookPath() {
 
                     <div>
                         <p>- 책갈피 모임에 댓글 기능 추가 예정</p>
-                        <p>- firebase function을 이용해 배포</p>
+                        <p>- Firebase function을 이용해 배포</p>
                     </div>
                 </div>
             </div>

@@ -24,10 +24,10 @@ export function Travel_diary() {
                     <div>기획 - 20%, 디자인 - 80%, 개발 -50%</div>
                 </div>
 
-                <div>
+                <div className="flex items-center gap-5">
                     <p className="text-[#519AD6] font-bold text-xl">URL</p>
 
-                    <Link target="_blank" href="https://travel-diary.hyerin.store">
+                    <Link className="p-3 bg-[#D9D9D9] rounded text-center" target="_blank" href="https://travel-diary.hyerin.store">
                         https://travel-diary.hyerin.store
                     </Link>
                 </div>
@@ -42,6 +42,7 @@ export function Travel_diary() {
                         <img className="h-4" src="image/ico_nextjs_ver2.png" alt="출처: figma" />
                         <img className="h-8" src="image/ico_tailwindcss.png" alt="출처: figma" />
                         <img className="h-8" src="image/ico_firebase.png" alt="출처: figma" />
+                        <img className="h-8" src="image/ico_figma.png" alt="출처: figma" />
                     </div>
                 </div>
                 {/* 주요 기능 */}
