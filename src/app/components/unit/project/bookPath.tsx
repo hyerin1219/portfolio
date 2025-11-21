@@ -9,7 +9,7 @@ export function BookPath() {
                 <div>
                     <p className="text-[#519AD6] font-bold text-xl">소개</p>
 
-                    <div>읽은 책을 선택하고 평가하며 독후감을 작성할 수 있고, 독서 모임을 생성하여 생각을 공유할 수 있는 플랫폼을 제작했습니다.</div>
+                    <div>읽은 책을 선택하고 평가하며 독후감을 작성할 수 있고, 독서 모임을 생성하여 생각을 공유할 수 있는 플랫폼을 반응형으로 제작했습니다.</div>
                 </div>
                 {/* 기간 / 인원 */}
                 <div>
@@ -43,8 +43,8 @@ export function BookPath() {
                     <div>
                         <p>1.책 검색 기능</p>
                         <p>2.독후감 등록, 수정, 삭제 기능 </p>
-                        <p>3.내가 쓴 독후감 모아 보기</p>
-                        <p>4.독서 모임</p>
+                        <p>3.내가 작성한 독후감 모아보기</p>
+                        <p>4.책갈피 모임 생성 · 가입 · 게시글 작성</p>
                     </div>
                 </div>
                 {/* 깃 / figma */}
@@ -67,43 +67,78 @@ export function BookPath() {
                     <div className="flex flex-wrap justify-center gap-5">
                         <div className="w-[100%] md:w-[48%] ">
                             <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/book_path/img_main.png" alt="" />
-                            <p>1. 메인 화면</p>
+                            <p className="font-bold">1. 메인 화면</p>
+                            <ul>
+                                <li>최신 등록 기준 '오늘의 책 5권 추천' 기능 슬라이드로 구현</li>
+                            </ul>
                         </div>
 
                         <div className="w-[100%] md:w-[48%] ">
                             <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/book_path/img03.png" alt="" />
-                            <p>2. naver 검색 api를 통해 책 검색</p>
-                            <p>3. 페이지네이션</p>
+                            <p className="font-bold">2. 검색 기능</p>
+
+                            <ul>
+                                <li>네이버 검색 API 연동</li>
+                                <li>페이지네이션 구현</li>
+                                <li>작가, 제목 등 키워드로 검색 가능</li>
+                            </ul>
                         </div>
 
                         <div className="w-[100%] md:w-[48%]">
                             <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/book_path/img04.png" alt="" />
-                            <p>4. 책 클릭 시 책 정보 모달</p>
+                            <p className="font-bold">3. 책 정보 모달</p>
+                            <ul>
+                                <li>독후감 작성 및 상세 페이지로 이동 가능</li>
+                            </ul>
                         </div>
 
                         <div className="w-[100%] md:w-[48%]">
                             <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/book_path/img01.png" alt="" />
-                            <p>5. 독후감 등록, 수정, 삭제</p>
+                            <p className="font-bold">4. 독후감 CRUD 기능</p>
+                            <ul>
+                                <li>Firebase Storage에 저장</li>
+                                <li>Google 로그인 기반 유저 인증</li>
+                                <li>react-hook-form 입력값 유효성 검사</li>
+                            </ul>
                         </div>
 
                         <div className="w-[100%] md:w-[48%]">
                             <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/book_path/img02.png" alt="" />
-                            <p>6. 내가 등록한 독후감 보기</p>
+                            <p className="font-bold">5. 내가 작성한 독후감 보기</p>
+
+                            <ul>
+                                <li>Google 로그인 기반 개인 데이터 조회</li>
+                                <li>독후감 상세 페이지 이동</li>
+                            </ul>
                         </div>
 
                         <div className="w-[100%] md:w-[48%]">
                             <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/book_path/img05.png" alt="" />
-                            <p>7. 전체/내가 가입한 책갈피 모임 탭으로 구분</p>
+                            <p className="font-bold">6. 책갈피 모임</p>
+
+                            <ul>
+                                <li>Google 로그인 기반 유저 인증</li>
+                                <li>전체 / 내가 가입한 모임 탭 분리</li>
+                                <li>members 배열 구조 기반 필터링</li>
+                            </ul>
                         </div>
 
                         <div className="w-[100%] md:w-[48%]">
                             <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/book_path/img06.png" alt="" />
-                            <p>8. 책갈피 모임 등록</p>
+                            <p className="font-bold">7. 책갈피 모임 기능</p>
+
+                            <ul>
+                                <li>모임 생성 및 비밀번호 기반 가입</li>
+                            </ul>
                         </div>
 
                         <div className="w-[100%] md:w-[48%]">
                             <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/book_path/img07.png" alt="" />
-                            <p>9. 책갈피 모임 게시글 등록, 수정, 삭제</p>
+                            <p className="font-bold">9. 책갈피 모임 게시글 CRUD 기능</p>
+
+                            <ul>
+                                <li>Firebase Storage에 저장</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -117,7 +152,7 @@ export function BookPath() {
 
                         <div>
                             <p className="font-bold">현상</p>
-                            <p>→ 키워드로 검색했을 때 전체 검색 결과 수는 정상적으로 표시되지만, 그 이후 페이지들로 이동해도 첫 검색 결과만 계속 렌더링되는 문제 </p>
+                            <p>키워드로 검색했을 때 전체 검색 결과 수는 정상적으로 표시되지만, 그 이후 페이지들로 이동해도 첫 검색 결과만 계속 렌더링되는 문제 </p>
                         </div>
 
                         <div>
@@ -137,8 +172,8 @@ export function BookPath() {
                     <p className="text-[#519AD6] font-bold text-xl">향후 계획</p>
 
                     <div>
-                        <p>- 책갈피 모임에 댓글 기능 추가 예정</p>
-                        <p>- Firebase function을 이용해 배포</p>
+                        <p>- 책갈피 모임 댓글 기능 추가 예정</p>
+                        <p>- Firebase Functions을 이용해 배포</p>
                     </div>
                 </div>
             </div>

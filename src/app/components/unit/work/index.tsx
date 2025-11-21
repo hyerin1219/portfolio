@@ -23,7 +23,7 @@ export default function Work() {
                         <ul className="list-disc list-inside space-y-1 ">
                             <li>HTML, CSS, 사내 라이브러리를 이용하여 디지털 교과서, 전자저작물 콘텐츠 개발</li>
                             <li>디자이너와 개발자와 협업하여 학습용 서비스 제작</li>
-                            <li>웹 접근성을 고려한 마크업</li>
+                            <li>웹 접근성(대체 텍스트, WAI-ARIA 속성, 키보드 네비게이션)을 고려한 마크업</li>
                             <li>학습용 콘텐츠 화면 구조 설계 및 프로토타입 제작</li>
                         </ul>
                     </div>

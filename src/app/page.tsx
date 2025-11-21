@@ -21,7 +21,7 @@ export default function Home() {
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 3, duration: 1.5 }}>
                 <div>
                     <p className="text-3xl mt-4">Frontend portfolio</p>
-                    <p className="text-lg mt-2">🔥 계속해서 불타오르는 프론트엔드 개발자, 정혜린입니다.</p>
+                    <p className="text-lg mt-2">🔥키보드 글자가 지워질 때까지 몰입하여 코딩하는 신입 프론트엔드 개발자, 정혜린입니다.</p>
                 </div>
 
                 {/* 프로필 */}
