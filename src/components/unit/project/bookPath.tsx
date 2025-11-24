@@ -2,31 +2,31 @@ import Link from 'next/link';
 
 export function BookPath() {
     return (
-        <section className="space-y-8 text-xl text-justify">
+        <section className="space-y-8  text-justify">
             {/* 프로젝트 제목 */}
-            <h2 className=" font-bold">{`>  Project_BookPath`}</h2>
+            <h2 className=" font-bold text-xl">{`>  Project_BookPath`}</h2>
 
             {/* 소개 */}
             <div className="space-y-2">
-                <p className="text-[#519AD6] font-bold ">소개</p>
+                <p className="text-[#519AD6] font-bold text-xl ">소개</p>
                 <p>읽은 책을 선택하고 평가하며 독후감을 작성할 수 있고, 독서 모임을 생성하여 생각을 공유할 수 있는 플랫폼을 반응형으로 제작했습니다.</p>
             </div>
 
             {/* 기간 / 인원 */}
             <div className="space-y-2">
-                <p className="text-[#519AD6] font-bold ">기간 / 인원</p>
+                <p className="text-[#519AD6] font-bold text-xl ">기간 / 인원</p>
                 <p>2025. 09 ~ 2025. 10 / 1명</p>
             </div>
 
             {/* 기여도 */}
             <div className="space-y-2">
-                <p className="text-[#519AD6] font-bold ">기여도</p>
+                <p className="text-[#519AD6] font-bold text-xl ">기여도</p>
                 <p>기획-100% 디자인-100% 개발-100%</p>
             </div>
 
             {/* 스킬 */}
             <div className="space-y-2">
-                <p className="text-[#519AD6] font-bold ">스킬</p>
+                <p className="text-[#519AD6] font-bold text-xl ">스킬</p>
                 <div className="flex flex-wrap items-center gap-4">
                     <img className="h-8" src="image/ico_react.png" alt="React" />
                     <img className="h-8" src="image/ico_typescript.png" alt="TypeScript" />
@@ -40,7 +40,7 @@ export function BookPath() {
 
             {/* 주요 기능 */}
             <div className="space-y-2">
-                <p className="text-[#519AD6] font-bold ">주요 기능</p>
+                <p className="text-[#519AD6] font-bold text-xl ">주요 기능</p>
                 <ul className="list-disc list-inside space-y-1">
                     <li>사용자 맞춤 도서 검색 및 필터링 기능 구현</li>
                     <li>독후감 CRUD 기능 개발 및 데이터 동기화</li>
@@ -64,7 +64,7 @@ export function BookPath() {
 
             {/* 개인 기여 내용 */}
             <div className="space-y-4">
-                <p className="text-[#519AD6] font-bold ">개발 내용</p>
+                <p className="text-[#519AD6] font-bold text-xl ">개발 내용</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {/* 각 기능 블록 */}
                     {[
@@ -111,7 +111,7 @@ export function BookPath() {
                     ].map((item, i) => (
                         <div key={i} className="bg-white p-4 rounded-md ">
                             <img className="w-full mb-2 rounded-md shadow-[2px_2px_6px_rgba(0,0,0,0.3)]" src={item.img} alt={item.title} />
-                            <p className="font-bold mb-1">{item.title}</p>
+                            <p className="font-bold text-xl mb-1">{item.title}</p>
                             <ul className="space-y-1">
                                 {item.desc.map((el, idx) => (
                                     <li className="flex  gap-2" key={idx}>
@@ -127,7 +127,7 @@ export function BookPath() {
 
             {/* 오류 해결 / 향후 계획 */}
             <div className="space-y-4">
-                <p className="text-[#519AD6] font-bold ">오류 해결</p>
+                <p className="text-[#519AD6] font-bold text-xl ">오류 해결</p>
                 <p>키워드 검색 문제: 페이지 이동 후 첫 검색 결과만 렌더링되는 문제 → 검색 위치 파라미터 추가로 해결</p>
 
                 {/* <ul>
@@ -138,7 +138,7 @@ export function BookPath() {
                     </li>
                 </ul> */}
 
-                <p className="text-[#519AD6] font-bold ">향후 계획</p>
+                <p className="text-[#519AD6] font-bold text-xl ">향후 계획</p>
                 <ul className="list-disc list-inside space-y-1">
                     <li>책갈피 모임 댓글 기능 추가 예정</li>
                     <li>Firebase Functions을 이용해 배포</li>

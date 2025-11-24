@@ -42,7 +42,7 @@ export default function Project() {
                             <p className="text-xl font-semibold">{projectName}</p>
 
                             {/* 이미지 버튼 */}
-                            <button onClick={() => handleClick(projectName)} style={{ backgroundImage: `url(${imageUrl})` }} className="w-[600px] h-[327px] border bg-cover bg-no-repeat shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)] transition-transform duration-300 hover:scale-105"></button>
+                            <button onClick={() => handleClick(projectName)} style={{ backgroundImage: `url(${imageUrl})` }} className="w-[300px] h-[164px] md:w-[600px] md:h-[327px]  border bg-cover bg-no-repeat shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)] transition-transform duration-300 hover:scale-105"></button>
                         </div>
                     );
                 })}
