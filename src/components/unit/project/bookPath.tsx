@@ -68,7 +68,7 @@ export function BookPath() {
                         <div className="w-[100%] md:w-[48%] ">
                             <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/book_path/img_main.png" alt="" />
                             <p className="font-bold">1. 메인 화면</p>
-                            <ul>
+                            <ul className="list-disc list-inside space-y-1">
                                 <li>최신 등록 기준 '오늘의 책 5권 추천' 기능 슬라이드로 구현</li>
                             </ul>
                         </div>
@@ -77,7 +77,7 @@ export function BookPath() {
                             <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/book_path/img03.png" alt="" />
                             <p className="font-bold">2. 검색 기능</p>
 
-                            <ul>
+                            <ul className="list-disc list-inside space-y-1">
                                 <li>네이버 검색 API 연동</li>
                                 <li>페이지네이션 구현</li>
                                 <li>작가, 제목 등 키워드로 검색 가능</li>
@@ -87,7 +87,7 @@ export function BookPath() {
                         <div className="w-[100%] md:w-[48%]">
                             <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/book_path/img04.png" alt="" />
                             <p className="font-bold">3. 책 정보 모달</p>
-                            <ul>
+                            <ul className="list-disc list-inside space-y-1">
                                 <li>독후감 작성 및 상세 페이지로 이동 가능</li>
                             </ul>
                         </div>
@@ -95,7 +95,7 @@ export function BookPath() {
                         <div className="w-[100%] md:w-[48%]">
                             <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/book_path/img01.png" alt="" />
                             <p className="font-bold">4. 독후감 CRUD 기능</p>
-                            <ul>
+                            <ul className="list-disc list-inside space-y-1">
                                 <li>Firebase Storage에 저장</li>
                                 <li>Google 로그인 기반 유저 인증</li>
                                 <li>react-hook-form 입력값 유효성 검사</li>
@@ -106,7 +106,7 @@ export function BookPath() {
                             <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/book_path/img02.png" alt="" />
                             <p className="font-bold">5. 내가 작성한 독후감 보기</p>
 
-                            <ul>
+                            <ul className="list-disc list-inside space-y-1">
                                 <li>Google 로그인 기반 개인 데이터 조회</li>
                                 <li>독후감 상세 페이지 이동</li>
                             </ul>
@@ -116,7 +116,7 @@ export function BookPath() {
                             <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/book_path/img05.png" alt="" />
                             <p className="font-bold">6. 책갈피 모임</p>
 
-                            <ul>
+                            <ul className="list-disc list-inside space-y-1">
                                 <li>Google 로그인 기반 유저 인증</li>
                                 <li>전체 / 내가 가입한 모임 탭 분리</li>
                                 <li>members 배열 구조 기반 필터링</li>
@@ -127,7 +127,7 @@ export function BookPath() {
                             <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/book_path/img06.png" alt="" />
                             <p className="font-bold">7. 책갈피 모임 기능</p>
 
-                            <ul>
+                            <ul className="list-disc list-inside space-y-1">
                                 <li>모임 생성 및 비밀번호 기반 가입</li>
                             </ul>
                         </div>
@@ -136,7 +136,7 @@ export function BookPath() {
                             <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/book_path/img07.png" alt="" />
                             <p className="font-bold">9. 책갈피 모임 게시글 CRUD 기능</p>
 
-                            <ul>
+                            <ul className="list-disc list-inside space-y-1">
                                 <li>Firebase Storage에 저장</li>
                             </ul>
                         </div>

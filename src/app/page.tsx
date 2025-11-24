@@ -1,11 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
-
-import { AboutMe } from './components/ui/aboutMe';
-import Work from './components/unit/work';
-import { Profile } from './components/ui/profile';
-import Project from './components/unit/project';
+import AboutMe from '@/components/unit/aboutMe';
 import { useEffect } from 'react';
 
 export default function Home() {
@@ -15,24 +10,8 @@ export default function Home() {
     }, []);
 
     return (
-        <div className="md:p-10 p-5 py-10 w-full">
+        <div className="size-full ">
             <AboutMe />
-
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 3, duration: 1.5 }}>
-                <div>
-                    <p className="text-3xl mt-4">Frontend portfolio</p>
-                    <p className="text-lg mt-2">🔥키보드 글자가 지워질 때까지 몰입하여 코딩하는 신입 프론트엔드 개발자, 정혜린입니다.</p>
-                </div>
-
-                {/* 프로필 */}
-                <Profile />
-
-                {/* 일 */}
-                <Work />
-
-                {/* 프로젝트 */}
-                <Project />
-            </motion.div>
         </div>
     );
 }

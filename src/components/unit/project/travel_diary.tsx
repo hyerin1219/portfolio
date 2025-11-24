@@ -77,7 +77,7 @@ export function Travel_diary() {
                             <img className=" w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/travel_diary/img_main.png" alt="" />
                             <p className="font-bold">1. 메인 화면</p>
 
-                            <ul>
+                            <ul className="list-disc list-inside space-y-1">
                                 <li>기능별 탭 구성</li>
                             </ul>
                         </div>
@@ -86,7 +86,7 @@ export function Travel_diary() {
                             <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/travel_diary/img01.png" alt="" />
                             <p className="font-bold">2. 지도 기능</p>
 
-                            <ul>
+                            <ul className="list-disc list-inside space-y-1">
                                 <li>Google Maps Places API로 POI(장소 정보) 검색/출력</li>
                                 {/* <li>마커 클릭 → 여행 일기 작성 모달 표시</li>
                                 <li>작성한 폼 데이터를 Firebase에 저장/삭제/수정</li> */}
@@ -97,7 +97,7 @@ export function Travel_diary() {
                             <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/travel_diary/img02.png" alt="" />
                             <p className="font-bold">4. 북마크(여행 일기 제목) 모달 창</p>
 
-                            <ul>
+                            <ul className="list-disc list-inside space-y-1">
                                 <li>Firebase 저장 및 삭제 기능 구현</li>
                                 {/* <li>Google 로그인 유저 검증</li> */}
                                 <li>여행 일기 제목 중복 검증 로직 구현</li>
@@ -108,7 +108,7 @@ export function Travel_diary() {
                             <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/travel_diary/img06.png" alt="" />
                             <p className="font-bold">5. 오류 알럿창</p>
 
-                            <ul>
+                            <ul className="list-disc list-inside space-y-1">
                                 <li>잘못된 입력값 또는 빈 데이터에 대한 오류 알림창 구현</li>
                             </ul>
                         </div>
@@ -117,7 +117,7 @@ export function Travel_diary() {
                             <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/travel_diary/img04.png" alt="" />
                             <p className="font-bold">6. 주사위 굴리기</p>
 
-                            <ul>
+                            <ul className="list-disc list-inside space-y-1">
                                 <li>버튼 클릭 시 1~6 사이 랜덤 숫자 출력</li>
                             </ul>
                         </div>
@@ -126,7 +126,7 @@ export function Travel_diary() {
                             <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/travel_diary/img05.png" alt="" />
                             <p className="font-bold">7. 롤렛 돌리기</p>
 
-                            <ul>
+                            <ul className="list-disc list-inside space-y-1">
                                 <li>2개 이상 입력된 롤렛 아이템 중 랜덤 데이터 출력</li>
                                 <li>롤렛 아이템 중복 입력 검증</li>
                             </ul>
