@@ -39,20 +39,16 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-family: 'JetBrainsMono-Medium';
     background-color: #fffefa;
+
     padding: 1%;
-    max-width: 1400px;
+    max-width: 1200px;
     height: 100vh;
     margin: 0 auto;
 }
 
-.mainWrap {
-    height: calc(100% - 220px);
-}
-
 main {
-    width: 70%;
-    height: 100%;
-    margin: 0 auto;
+    width: 100%;
+    height: calc(100% - 220px);
 }
 
 a,

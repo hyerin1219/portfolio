@@ -1,7 +1,8 @@
 'use client';
 
-import { Dispatch, SetStateAction } from 'react';
-import { motion } from 'framer-motion';
+import { Dispatch, SetStateAction, useEffect, useCallback } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import HeaderBar from './headerBar';
 
 interface ModalProps {
     setShowModal: Dispatch<SetStateAction<boolean>>;
@@ -12,17 +13,47 @@ interface ModalProps {
 export function Modal({ setShowModal, selectedProject, Projects }: ModalProps) {
     const ProjectComponent = selectedProject ? Projects[selectedProject] : null;
 
-    return (
-        <div className="fixed inset-0 bg-[#1a1a1a] flex items-center justify-center z-50 text-right">
-            <motion.div className="w-[92%] h-[90%] bg-white rounded-lg" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                <motion.div className="w-full h-full p-4 py-5" initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.8, opacity: 0 }} transition={{ duration: 0.3 }}>
-                    <div className="w-full h-[calc(100%-50px)] text-[#000] text-justify overflow-y-auto overflow-x-hidden p-2 py-0">{ProjectComponent && <ProjectComponent />}</div>
+    // ESC로 닫기
+    const handleEscClose = useCallback(
+        (e: KeyboardEvent) => {
+            if (e.key === 'Escape') {
+                setShowModal(false);
+            }
+        },
+        [setShowModal]
+    );
 
-                    <button onClick={() => setShowModal(false)} className="px-4 py-1.5 border rounded bg-[#888] text-white mt-4">
-                        닫기
+    useEffect(() => {
+        window.addEventListener('keydown', handleEscClose);
+        document.body.style.overflow = 'hidden'; // 스크롤 막기
+
+        return () => {
+            window.removeEventListener('keydown', handleEscClose);
+            document.body.style.overflow = 'auto'; // 복구
+        };
+    }, [handleEscClose]);
+
+    //  배경 클릭 닫기
+    const handleOverlayClick = (e: React.MouseEvent<HTMLDivElement>) => {
+        if (e.target === e.currentTarget) {
+            setShowModal(false);
+        }
+    };
+
+    return (
+        <AnimatePresence>
+            <div onClick={handleOverlayClick} className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+                <motion.div className="relative w-[92%] h-[90%] border border-black rounded-md shadow-[4px_4px_0_0_rgba(0,0,0,0.5)] overflow-hidden font-mono  bg-white rounded-lg " initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.8 }} transition={{ duration: 0.25 }}>
+                    {selectedProject && <HeaderBar page={selectedProject} />}
+                    {/* 닫기 버튼 (오른쪽 상단) */}
+                    <button onClick={() => setShowModal(false)} className="absolute top-1 right-2  text-xl">
+                        ✕
                     </button>
+
+                    {/* 모달 내용 */}
+                    <div className="w-full h-[95%] p-6 overflow-y-auto ">{ProjectComponent && <ProjectComponent />}</div>
                 </motion.div>
-            </motion.div>
-        </div>
+            </div>
+        </AnimatePresence>
     );
 }

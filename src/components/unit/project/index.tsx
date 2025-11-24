@@ -7,6 +7,7 @@ import { BookPath } from './bookPath';
 import { GMoney } from './gMoney';
 import { Travel_diary } from './travel_diary';
 import { H_Market } from './H_Market';
+import HeaderBar from '@/components/ui/headerBar';
 
 export default function Project() {
     const [showModal, setShowModal] = useState(false);
@@ -25,15 +26,24 @@ export default function Project() {
     };
 
     return (
-        <section className="relative mt-12 w-full">
-            <h2 className="text-3xl font-bold mb-6">Project</h2>
+        <section className="w-full">
+            {/* Header */}
+            <HeaderBar page="Project" />
 
-            <div className="flex flex-wrap justify-between gap-2 md:gap-1">
+            {/* Body */}
+            <div className="p-3 pb-5 space-y-8">
+                <p className="text-lg font-bold">{`> Projects.tsx`}</p>
+
                 {Object.keys(Projects).map((projectName) => {
+                    const imageUrl = `/image/${projectName}.png`;
                     return (
-                        <button key={projectName} onClick={() => handleClick(projectName)} className="w-[48%] border rounded-lg text-center py-5 md:w-[24%] hover:bg-gray-100 hover:text-[#000]">
-                            {projectName}
-                        </button>
+                        <div key={projectName} className="flex flex-col items-center space-y-2">
+                            {/* 프로젝트 이름 */}
+                            <p className="text-xl font-semibold">{projectName}</p>
+
+                            {/* 이미지 버튼 */}
+                            <button onClick={() => handleClick(projectName)} style={{ backgroundImage: `url(${imageUrl})` }} className="w-[600px] h-[327px] border bg-cover bg-no-repeat shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)] transition-transform duration-300 hover:scale-105"></button>
+                        </div>
                     );
                 })}
             </div>
