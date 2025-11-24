@@ -6,9 +6,9 @@ export default function Header() {
             <h1 className="text-3xl ">Frontend portfolio</h1>
 
             <div className="flex gap-5">
-                <Link href="./">About Me</Link>
+                <Link href="./">About</Link>
                 <Link href="./project">Project</Link>
-                <Link href="./work">Work</Link>
+                {/* <Link href="./work">Work</Link> */}
             </div>
         </header>
     );

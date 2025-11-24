@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/ui/header';
 import Footer from '@/components/ui/footer';
-import PhoneFrame from '@/components/ui/phoneframe';
 
 const geistSans = Geist({
     variable: '--font-geist-sans',
@@ -29,11 +28,9 @@ export default function RootLayout({
         <html lang="ko">
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
                 <Header />
-
-                <main className="border-2 border-t-1 border-b-1 p-3 overflow-hidden overflow-y-auto">
-                    {/* <PhoneFrame>{children}</PhoneFrame> */}
-                    {children}
-                </main>
+                <div className="mainWrap size-full border-2 border-t-1 border-b-1">
+                    <main className="p-3 overflow-hidden overflow-y-auto border-2 border-t-0 border-b-0">{children}</main>
+                </div>
                 <Footer />
             </body>
         </html>

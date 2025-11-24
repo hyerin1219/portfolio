@@ -6,7 +6,7 @@ const asciiArt = '      _                            __ _            _  _     _ 
 export default function AsciiMotion() {
     return (
         <div className="w-full overflow-hidden font-bold">
-            <div className="inline-block whitespace-pre font-mono text-sm leading-[16px] animate-scroll">{asciiArt}</div>
+            <div className="inline-block whitespace-pre font-mono text-sm leading-[14px] animate-scroll">{asciiArt}</div>
 
             <style jsx>{`
                 @keyframes scroll {
