@@ -57,6 +57,10 @@ button {
     cursor: pointer;
 }
 
+img {
+    display: inline-block;
+}
+
 i,
 em,
 b {

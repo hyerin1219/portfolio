@@ -9,7 +9,7 @@ export default function HeaderBar({ page }: IHeaderBarProps) {
             <span className="w-3 h-3 bg-red-500 rounded-full border border-black"></span>
             <span className="w-3 h-3 bg-yellow-500 rounded-full border border-black"></span>
             <span className="w-3 h-3 bg-green-500 rounded-full border border-black"></span>
-            <span className="ml-3 text-xs">{pageName}.com</span>
+            <span className="ml-3 text-xl">{pageName}.com</span>
         </div>
     );
 }
