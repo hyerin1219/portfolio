@@ -32,7 +32,7 @@ export default function Project() {
 
             {/* Body */}
             <div className="p-3 pb-5 space-y-8">
-                <p className="text-lg font-bold">{`> Projects.tsx`}</p>
+                <p className="text-lg font-bold">{`> Projects`}</p>
 
                 {Object.keys(Projects).map((projectName) => {
                     const imageUrl = `/image/${projectName}.png`;

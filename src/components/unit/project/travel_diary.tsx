@@ -103,12 +103,12 @@ export function Travel_diary() {
                         {
                             img: '/image/travel_diary/img04.png',
                             title: '주사위 굴리기',
-                            desc: ['1~6 사이 랜덤 숫자 출력 기능', 'useAudio 훅과 <audio>태그를 활용해 효과음 재생', 'conic-gradient과 CSS를 활용하여 룰렛 회전 애니메이션 구현', '아이템 추가/삭제 기능 제공, 룰렛 회전 중 인터랙션 제한으로 UX 안정화'],
+                            desc: ['1~6 사이 랜덤 숫자 출력 기능', 'useAudio 훅과 <audio>태그를 활용해 효과음 재생', 'conic-gradient과 CSS를 활용하여 룰렛 회전 애니메이션 구현', '게임 진행 상태를 관리하여 UI변화를 명확히 표현'],
                         },
                         {
                             img: '/image/travel_diary/img05.png',
                             title: '룰렛 돌리기',
-                            desc: ['랜덤 데이터 출력', '룰렛 아이템 중복 입력 검증', 'Framer Motion을 활용해 주사위 등장 시 자연스러운 애니메이션 적용', 'useAudio 훅과 <audio>태그를 활용해 효과음 재생', '게임 진행 상태를 관리하여 UI변화를 명확히 표현'],
+                            desc: ['랜덤 데이터 출력', '룰렛 아이템 중복 입력 검증', 'Framer Motion을 활용해 주사위 등장 시 자연스러운 애니메이션 적용', 'useAudio 훅과 <audio>태그를 활용해 효과음 재생', '아이템 추가/삭제 기능 제공, 룰렛 회전 중 인터랙션 제한으로 UX 안정화'],
                         },
                     ].map((item, i) => (
                         <div key={i}>
@@ -149,10 +149,10 @@ export function Travel_diary() {
                         <span className="font-semibold">오류 2</span> : Git 브랜치 충돌 문제
                     </p>
                     <p>
-                        <span className="font-semibold">현상</span> : pull 받지 않고 작업 후 push으로 인한 충돌
+                        <span className="font-semibold">현상</span> : 로컬에서 pull 없이 작업 후 push하여 발생한 충돌
                     </p>
                     <p>
-                        <span className="font-semibold">해결</span> : 브랜치 버전 되돌림 및 재정리로 해결
+                        <span className="font-semibold">해결</span> : 브랜치 버전을 되돌리고 재정리하여 문제 해결
                     </p>
                 </div>
             </div>

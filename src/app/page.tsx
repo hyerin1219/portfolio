@@ -1,6 +1,6 @@
 'use client';
 
-import AboutMe from '@/components/unit/aboutMe';
+import Main from '@/components/unit/main';
 import { useEffect } from 'react';
 
 export default function Home() {
@@ -9,9 +9,5 @@ export default function Home() {
         window.scrollTo({ top: 0, behavior: 'auto' });
     }, []);
 
-    return (
-        <div className="size-full ">
-            <AboutMe />
-        </div>
-    );
+    return <Main />;
 }

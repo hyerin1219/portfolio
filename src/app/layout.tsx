@@ -29,7 +29,7 @@ export default function RootLayout({
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
                 <Header />
                 <main className="p-5 overflow-hidden overflow-y-auto border-2 border-t-0 border-b-0">
-                    <div className="border border-black rounded-md shadow-[4px_4px_0_0_rgba(0,0,0,0.5)] overflow-hidden font-mono bg-white">{children}</div>
+                    <div className="w-full min-h-full border border-black rounded-md shadow-[4px_4px_0_0_rgba(0,0,0,0.5)] overflow-hidden font-mono bg-gray-50">{children}</div>
                 </main>
                 <Footer />
             </body>
