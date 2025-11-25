@@ -51,7 +51,7 @@ export function Modal({ setShowModal, selectedProject, Projects }: ModalProps) {
                     </button>
 
                     {/* 모달 내용 */}
-                    <div className="w-full h-[95%] p-6 overflow-y-auto ">{ProjectComponent && <ProjectComponent />}</div>
+                    <div className="w-full h-[95%] p-6 overflow-y-auto  text-justify text-sm md:text-lg">{ProjectComponent && <ProjectComponent />}</div>
                 </motion.div>
             </div>
         </AnimatePresence>

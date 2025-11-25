@@ -2,198 +2,173 @@ import Link from 'next/link';
 
 export function Travel_diary() {
     return (
-        <div>
-            <h3 className="font-bold text-2xl">Team Project_Travel_Diary</h3>
-            <div className="flex flex-col gap-5 mt-8">
-                {/* 소개 */}
-                <div>
-                    <p className="text-[#519AD6] font-bold text-xl">소개</p>
+        <section className="space-y-8">
+            {/* 프로젝트 제목 */}
+            <h2 className="font-bold md:text-xl text-lg">{`> Team Project_Travel_Diary`}</h2>
 
-                    <div>방문할 예정이거나 다녀온 여행지를 지도에 표시하고, 날짜와 함께 여행 일기를 기록할 수 있습니다. 작성한 일기를 한눈에 확인할 수 있는 페이지와, 친구와 간단하게 내기를 즐길 수 있는 게임 페이지도 함께 제작했습니다.</div>
+            {/* 소개 */}
+            <div className="space-y-2">
+                <p className="text-[#519AD6] font-bold md:text-xl text-lg">소개</p>
+                <p>방문할 예정이거나 다녀온 여행지를 지도에 표시하고, 날짜와 함께 여행 일기를 기록할 수 있는 서비스입니다.</p>
+            </div>
+
+            {/* 기간 / 인원 */}
+            <div className="space-y-2">
+                <p className="text-[#519AD6] font-bold md:text-xl text-lg">기간 / 인원</p>
+                <p>2025. 05 ~ 2025. 08 / 팀 프로젝트(2명)</p>
+            </div>
+
+            {/* 기여도 */}
+            <div className="space-y-2">
+                <p className="text-[#519AD6] font-bold md:text-xl text-lg">기여도</p>
+                <p>기획 20%, 디자인 80%, 개발 50%</p>
+            </div>
+
+            {/* URL */}
+            <div className="flex flex-col md:flex-row gap-4">
+                <Link className="flex-1 p-4 bg-[#D9D9D9] rounded-md hover:bg-gray-300 transition text-center" href="https://travel-diary.hyerin.store" target="_blank">
+                    <span>Travel_Diary 바로가기</span>
+                </Link>
+
+                <Link className="flex-1 p-4 bg-[#D9D9D9] rounded-md hover:bg-gray-300 transition text-center" href="https://github.com/hyerin1219/bookPath" target="_blank">
+                    <img className="h-6 mr-2" src="image/ico_github.png" alt="GitHub" />
+                    <span>GitHub 가기</span>
+                </Link>
+
+                <Link className="flex-1 p-4 bg-[#D9D9D9] rounded-md hover:bg-gray-300 transition text-center" href="https://figmashort.link/wx6mfH" target="_blank">
+                    <img className="h-6 mr-2" src="image/ico_figma.png" alt="Figma" />
+                    <span>Figma 가기</span>
+                </Link>
+            </div>
+
+            {/* 스킬 */}
+            <div className="space-y-2">
+                <p className="text-[#519AD6] font-bold md:text-xl text-lg">스킬</p>
+                <div className="flex flex-wrap items-center gap-4">
+                    <img className="h-8" src="image/ico_react.png" alt="React" />
+                    <img className="h-8" src="image/ico_typescript.png" alt="TypeScript" />
+                    <img className="h-4" src="image/ico_nextjs_ver2.png" alt="Next.js" />
+                    <img className="h-8" src="image/ico_tailwindcss.png" alt="TailwindCSS" />
+                    <img className="h-8" src="image/ico_firebase.png" alt="Firebase" />
+                    <img className="h-8" src="image/ico_figma.png" alt="Figma" />
                 </div>
-                {/* 기간 / 인원 */}
-                <div>
-                    <p className="text-[#519AD6] font-bold text-xl">기간 / 인원</p>
+                <p>Next.js로 성능을 최적화하고, Firebase로 인증 및 데이터 관리를 처리했습니다. Tailwind CSS로 반응형 UI를 구현했습니다.</p>
+            </div>
 
-                    <div>2025. 05 ~ 2025. 08 / 팀 프로젝트(2명)</div>
-                </div>
-                {/* 기여도 */}
-                <div>
-                    <p className="text-[#519AD6] font-bold text-xl">기여도</p>
+            {/* 주요 기능 */}
+            <div className="space-y-2">
+                <p className="text-[#519AD6] font-bold md:text-xl text-lg">주요 기능</p>
+                <ul>
+                    <li className="flex items-center gap-2">
+                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full"></span>
+                        Google map를 활용하여 여행에 관한 정보를 마커로 등록
+                    </li>
+                    <li className="flex items-center gap-2">
+                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full"></span>
+                        사용자가 작성한 여행 일기 목록 조회 및 관리 기능
+                    </li>
+                    <li className="flex items-center gap-2">
+                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full"></span>
+                        간단한 미니 게임(룰렛·주사위) 제공
+                    </li>
+                </ul>
+            </div>
 
-                    <div>기획 20%, 디자인 80%, 개발 50%</div>
-                </div>
+            {/* 개인 기여 내용 */}
+            <div className="space-y-4">
+                <p className="text-[#519AD6] font-bold md:text-xl text-lg">개발 내용</p>
 
-                <div className="flex items-center gap-5">
-                    <p className="text-[#519AD6] font-bold text-xl">URL</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {[
+                        {
+                            img: '/image/travel_diary/img_main.png',
+                            title: '메인 화면',
+                            desc: ['배열 기반으로 메뉴 정보 관리', 'Framer Motion으로 애니메이션을 적용해 사용자 경험 강화', 'useAuth 훅을 통해 로그인 여부를 확인하여, 인증이 필요한 메뉴 이동 제한'],
+                        },
+                        {
+                            img: '/image/travel_diary/img01.png',
+                            title: '지도 기능',
+                            desc: ['Google Maps Places API로 POI 검색학여 출력'],
+                        },
+                        {
+                            img: '/image/travel_diary/img02.png',
+                            title: '북마크(여행 일기 제목) 모달',
+                            desc: ['Firebase를 사용해 북마크 데이터 관리', '여행 일기 제목 중복 검증'],
+                        },
+                        {
+                            img: '/image/travel_diary/img06.png',
+                            title: '오류 알림창',
+                            desc: ['잘못된 입력값 또는 빈 데이터에 대한 오류를 재사용 가능한 커스텀 훅으로 구현'],
+                        },
+                        {
+                            img: '/image/travel_diary/img04.png',
+                            title: '주사위 굴리기',
+                            desc: ['1~6 사이 랜덤 숫자 출력 기능', 'useAudio 훅과 <audio>태그를 활용해 효과음 재생', 'conic-gradient과 CSS를 활용하여 룰렛 회전 애니메이션 구현', '아이템 추가/삭제 기능 제공, 룰렛 회전 중 인터랙션 제한으로 UX 안정화'],
+                        },
+                        {
+                            img: '/image/travel_diary/img05.png',
+                            title: '룰렛 돌리기',
+                            desc: ['랜덤 데이터 출력', '룰렛 아이템 중복 입력 검증', 'Framer Motion을 활용해 주사위 등장 시 자연스러운 애니메이션 적용', 'useAudio 훅과 <audio>태그를 활용해 효과음 재생', '게임 진행 상태를 관리하여 UI변화를 명확히 표현'],
+                        },
+                    ].map((item, i) => (
+                        <div key={i}>
+                            <img className="w-full mb-2 rounded-md shadow-[2px_2px_6px_rgba(0,0,0,0.3)]" src={item.img} alt={item.title} />
+                            <p className="font-bold md:text-xl text-lg mb-1">{item.title}</p>
 
-                    <Link className="p-3 bg-[#D9D9D9] rounded text-center" target="_blank" href="https://travel-diary.hyerin.store">
-                        https://travel-diary.hyerin.store
-                    </Link>
-                </div>
-
-                {/* 스킬 */}
-                <div>
-                    <p className="text-[#519AD6] font-bold text-xl">스킬</p>
-
-                    <div className="flex items-center gap-5">
-                        <img className="h-8" src="image/ico_react.png" alt="출처: figma" />
-                        <img className="h-8" src="image/ico_typescript.png" alt="출처: figma" />
-                        <img className="h-4" src="image/ico_nextjs_ver2.png" alt="출처: figma" />
-                        <img className="h-8" src="image/ico_tailwindcss.png" alt="출처: figma" />
-                        <img className="h-8" src="image/ico_firebase.png" alt="출처: figma" />
-                        <img className="h-8" src="image/ico_figma.png" alt="출처: figma" />
-                    </div>
-                </div>
-                {/* 주요 기능 */}
-                <div>
-                    <p className="text-[#519AD6] font-bold text-xl">주요 기능</p>
-
-                    <div>
-                        <p>1.여행지 마커 등록(방문 예정 / 방문 완료)</p>
-                        <p>2.마커에 날짜, 설명, 여행 일기 제목 저장</p>
-                        <p>3.작성된 일기 목록 조회</p>
-                        <p>4.룰렛·주사위 게임 페이지 제공</p>
-                    </div>
-                </div>
-                {/* 깃 / figma */}
-                <div className="flex items-center justify-between ">
-                    <Link className="w-[49%] h-[70px] md:h-[90px] p-3 bg-[#D9D9D9] rounded text-center" href="https://github.com/calmer-ty/travel-diary" target="_blank">
-                        <img className="h-6" src="image/ico_github.png" alt="출처: figma" />
-                        <span>github 가기</span>
-                    </Link>
-
-                    <Link className="w-[49%] h-[70px] md:h-[90px] p-3 bg-[#D9D9D9] rounded text-center" href="https://figmashort.link/H7KYhZ" target="_blank">
-                        <img className="h-6" src="image/ico_figma.png" alt="출처: figma" />
-                        <span>figma 가기</span>
-                    </Link>
-                </div>
-                {/* 개인 기여 내용 */}
-                <div>
-                    <p className="text-[#519AD6] font-bold text-xl">개인 기여 내용</p>
-
-                    <div className="flex flex-wrap justify-center gap-5">
-                        <div className="w-[100%] md:w-[48%]">
-                            <img className=" w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/travel_diary/img_main.png" alt="" />
-                            <p className="font-bold">1. 메인 화면</p>
-
-                            <ul className="list-disc list-inside space-y-1">
-                                <li>기능별 탭 구성</li>
+                            <ul className="space-y-1">
+                                {item.desc.map((el, idx) => (
+                                    <li key={idx} className="flex gap-2">
+                                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full md:mt-3 mt-2"></span>
+                                        {el}
+                                    </li>
+                                ))}
                             </ul>
                         </div>
-
-                        <div className="w-[100%] md:w-[48%]">
-                            <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/travel_diary/img01.png" alt="" />
-                            <p className="font-bold">2. 지도 기능</p>
-
-                            <ul className="list-disc list-inside space-y-1">
-                                <li>Google Maps Places API로 POI(장소 정보) 검색/출력</li>
-                                {/* <li>마커 클릭 → 여행 일기 작성 모달 표시</li>
-                                <li>작성한 폼 데이터를 Firebase에 저장/삭제/수정</li> */}
-                            </ul>
-                        </div>
-
-                        <div className="w-[100%] md:w-[48%]">
-                            <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/travel_diary/img02.png" alt="" />
-                            <p className="font-bold">4. 북마크(여행 일기 제목) 모달 창</p>
-
-                            <ul className="list-disc list-inside space-y-1">
-                                <li>Firebase 저장 및 삭제 기능 구현</li>
-                                {/* <li>Google 로그인 유저 검증</li> */}
-                                <li>여행 일기 제목 중복 검증 로직 구현</li>
-                            </ul>
-                        </div>
-
-                        <div className="w-[100%] md:w-[48%]">
-                            <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/travel_diary/img06.png" alt="" />
-                            <p className="font-bold">5. 오류 알럿창</p>
-
-                            <ul className="list-disc list-inside space-y-1">
-                                <li>잘못된 입력값 또는 빈 데이터에 대한 오류 알림창 구현</li>
-                            </ul>
-                        </div>
-
-                        <div className="w-[100%] md:w-[48%]">
-                            <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/travel_diary/img04.png" alt="" />
-                            <p className="font-bold">6. 주사위 굴리기</p>
-
-                            <ul className="list-disc list-inside space-y-1">
-                                <li>버튼 클릭 시 1~6 사이 랜덤 숫자 출력</li>
-                            </ul>
-                        </div>
-
-                        <div className="w-[100%] md:w-[48%]">
-                            <img className="w-full inline-block shadow-[2px_2px_6px_rgba(0,0,0,0.3)] mb-1" src="/image/travel_diary/img05.png" alt="" />
-                            <p className="font-bold">7. 롤렛 돌리기</p>
-
-                            <ul className="list-disc list-inside space-y-1">
-                                <li>2개 이상 입력된 롤렛 아이템 중 랜덤 데이터 출력</li>
-                                <li>롤렛 아이템 중복 입력 검증</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                {/* 오류 해결 */}
-                <div>
-                    <p className="text-[#519AD6] font-bold text-xl">오류 해결</p>
-
-                    {/* 오류 1 */}
-                    <div>
-                        <div className="font-bold">오류 1 : 여행 일기 제목 동시 변경 문제</div>
-
-                        <div>
-                            <p className="font-bold">현상</p>
-                            <p>여행 일기 제목을 수정하거나 등록하면, 등록된 모든 여행 일기의 제목이 동시에 바뀌는 문제 발생</p>
-                        </div>
-
-                        <div>
-                            <p className="font-bold">원인</p>
-                            <p>1.여행 일기 데이터 안에 제목 데이터를 함께 저장하는 로직을 분리하지 않아 UI가 꼬임</p>
-                            <p>2.Firebase에는 데이터가 정상적으로 저장됐지만, UI 조건 처리 부족으로 오류 발생</p>
-                        </div>
-
-                        <div>
-                            <p className="font-bold">해결</p>
-                            <p>1.여행 일기 제목을 컴포넌트화하여 독립적으로 관리 </p>
-                            <p>2.데이터 상태 조건 분기 적용 (데이터가 없을 때, 데이터가 있을 때, 데이터가 선택되었을 때)</p>
-                            <p>→ 위 조건을 모두 적용하니 UI에 정상적으로 표시됨</p>
-                        </div>
-                    </div>
-
-                    {/* 오류 2 */}
-                    <div className="mt-10">
-                        <div className="font-bold">오류 2 : git 브랜치 충돌 문제</div>
-
-                        <div>
-                            <p className="font-bold">현상</p>
-                            <p>git 관리 과정에서 내용이 겹치는 충돌 발생</p>
-                        </div>
-
-                        <div>
-                            <p className="font-bold">발생 과정</p>
-                            <p>1.feature/calmer 작업 후 pull 없이 merge 진행</p>
-                            <p>2.feature/h에서 pull 후 작업 → 내용 겹침</p>
-                            <p>3.feature/h에서 reset 후 pull 시 작업 내용과 겹치는 부분 제대로 정리하지 않고 push → merge 충돌</p>
-                        </div>
-
-                        <div>
-                            <p className="font-bold">해결</p>
-                            <p>1.feature/calmer에서 버전 되돌린 후 merge </p>
-                            <p>2.로컬에서 feature/h 브랜치 삭제 후 다시 checkout 충돌 없이 최신 버전 반영</p>
-                        </div>
-                    </div>
-                </div>
-
-                {/* 느낀점 */}
-                <div>
-                    <p className="text-[#519AD6] font-bold text-xl">느낀점</p>
-
-                    <div>
-                        <p>- 리팩토링 과정에서 로직을 분리하고 상태를 명확히 관리하는 중요성을 깨달음</p>
-                        <p>- 공통된 로직이나 여러 곳에서 쓰일 기능을 Hook으로 관리하니 편리하고 재사용성이 높아짐</p>
-                    </div>
+                    ))}
                 </div>
             </div>
-        </div>
+
+            {/* 오류 해결 */}
+            <div className="space-y-4">
+                <p className="text-[#519AD6] font-bold md:text-xl text-lg">오류 해결</p>
+
+                <div>
+                    <p>
+                        <span className="font-semibold">오류 1</span> : 여행 일기 제목 동시 변경 문제
+                    </p>
+                    <p>
+                        <span className="font-semibold">현상</span> : 여행 일기 제목이 동시에 변경되는 현상
+                    </p>
+                    <p>
+                        <span className="font-semibold">해결</span> : 여행 일기 제목 데이터 구조를 분리하고, 조건 분기 처리를 추가하여 UI 동기화 문제 해결
+                    </p>
+                </div>
+
+                <div>
+                    <p>
+                        <span className="font-semibold">오류 2</span> : Git 브랜치 충돌 문제
+                    </p>
+                    <p>
+                        <span className="font-semibold">현상</span> : pull 받지 않고 작업 후 push으로 인한 충돌
+                    </p>
+                    <p>
+                        <span className="font-semibold">해결</span> : 브랜치 버전 되돌림 및 재정리로 해결
+                    </p>
+                </div>
+            </div>
+
+            {/* 느낀점 */}
+            <div className="space-y-4">
+                <p className="text-[#519AD6] font-bold md:text-xl text-lg ">느낀점</p>
+                <ul>
+                    <li className="flex items-center gap-2">
+                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full "></span>리팩토링 과정에서 로직 분리와 상태 관리의 중요성을 깨달음
+                    </li>
+                    <li className="flex items-center gap-2">
+                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full "></span>공통 로직을 Hook으로 관리하니 유지보수성과 재사용성이 크게 향상됨
+                    </li>
+                </ul>
+            </div>
+        </section>
     );
 }
