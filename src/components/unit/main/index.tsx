@@ -13,16 +13,23 @@ export default function Main() {
                     {/* 왼쪽: 소개 */}
                     <div className="flex-1 space-y-6 text-justify">
                         <p className="text-xl md:text-2xl font-semibold text-gray-700">안녕하세요. 키보드 글자가 지워질 때까지 몰입하며 코딩하는 신입 개발자 정혜린입니다.</p>
-                        <p className="text-gray-600">React, Next.js, TypeScript를 활용하여 사용자 친화적 웹을 구현하고, HTML/CSS 기반 디지털 교과서 콘텐츠 제작 경험과 사내 라이브러리 개선 경험을 보유하고 있습니다.</p>
+                        <p className="text-gray-600">React, Next.js, TypeScript 등 다양한 기술을 활용하여 사용자 친화적인 인터페이스와 경험을 구현하며, HTML/CSS 기반 디지털 콘텐츠 제작 경험과 사내 라이브러리 개선 경험을 보유하고 있습니다.</p>
 
                         {/* 링크 버튼 */}
                         <div className="flex justify-center flex-wrap gap-6">
-                            <Link href="./aboutMe" className="flex items-center gap-2 px-4 py-2 bg-white rounded-lg shadow hover:shadow-lg transition">
-                                <img className="w-6 mr-3" src="./image/icon_folder.png" alt="" />
+                            <Link href="./aboutMe" className="relative group flex items-center gap-2 px-4 py-2 bg-white rounded-lg shadow hover:shadow-lg transition">
+                                {/* 기본 이미지 */}
+                                <img className="h-6 mr-3 transition-opacity duration-200 group-hover:opacity-0" src="./image/icon_folder.png" alt="" />
+                                {/* hover 이미지 */}
+                                <img className="h-6 mr-3 absolute top-2 left-4 transition-opacity duration-200 opacity-0 group-hover:opacity-100" src="./image/icon_folder_open.png" alt="" />
                                 About
                             </Link>
-                            <Link href="./project" className="flex items-center gap-2 px-4 py-2 bg-white rounded-lg shadow hover:shadow-lg transition">
-                                <img className="w-6 mr-3" src="./image/icon_folder.png" alt="" />
+
+                            <Link href="./project" className="relative  group flex items-center gap-2 px-4 py-2 bg-white rounded-lg shadow hover:shadow-lg transition">
+                                {/* 기본 이미지 */}
+                                <img className="h-6 mr-3 transition-opacity duration-200 group-hover:opacity-0" src="./image/icon_folder.png" alt="" />
+                                {/* hover 이미지 */}
+                                <img className="h-6 mr-3 absolute top-2 left-4 transition-opacity duration-200 opacity-0 group-hover:opacity-100" src="./image/icon_folder_open.png" alt="" />
                                 Project
                             </Link>
                         </div>

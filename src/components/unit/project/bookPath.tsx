@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export function BookPath() {
     return (
-        <section className="space-y-8 ">
+        <section className="space-y-8 text-base">
             {/* 프로젝트 제목 */}
             <h2 className=" font-bold md:text-xl text-lg">{`>  Project_BookPath`}</h2>
 

@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export function Travel_diary() {
     return (
-        <section className="space-y-8">
+        <section className="space-y-8 text-base">
             {/* 프로젝트 제목 */}
             <h2 className="font-bold md:text-xl text-lg">{`> Team Project_Travel_Diary`}</h2>
 
@@ -27,7 +27,7 @@ export function Travel_diary() {
             {/* URL */}
             <div className="flex flex-col md:flex-row gap-4">
                 <Link className="flex-1 p-4 bg-[#D9D9D9] rounded-md hover:bg-gray-300 transition text-center" href="https://travel-diary.hyerin.store" target="_blank">
-                    <span>Travel_Diary 바로가기</span>
+                    <span className="font-semibold">Travel_Diary 바로가기</span>
                 </Link>
 
                 <Link className="flex-1 p-4 bg-[#D9D9D9] rounded-md hover:bg-gray-300 transition text-center" href="https://github.com/hyerin1219/bookPath" target="_blank">
@@ -155,6 +155,29 @@ export function Travel_diary() {
                         <span className="font-semibold">해결</span> : 브랜치 버전을 되돌리고 재정리하여 문제 해결
                     </p>
                 </div>
+            </div>
+
+            {/* 사용자 피드백 반영 내용 */}
+            <div className="space-y-2">
+                <p className="text-[#519AD6] font-bold md:text-xl text-lg">사용자 피드백 반영 내용</p>
+                <ul>
+                    <li className="flex items-center gap-2">
+                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full"></span>
+                        사용자 경험을 고려한 직관적인 UI 구조로 전면 재정비
+                    </li>
+                    <li className="flex items-center gap-2">
+                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full"></span>
+                        브랜드 가독성을 높이기 위한 로고 리디자인 작업 수행
+                    </li>
+                    <li className="flex items-center gap-2">
+                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full"></span>
+                        주요 기능을 한눈에 파악할 수 있도록 전체 메뉴 구조
+                    </li>
+                    <li className="flex items-center gap-2">
+                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full"></span>
+                        서비스 콘셉트(여행)에 맞춘 맞춤형 콘텐츠 추가 — 여행 주의 국가 정보, 메인 페이지 여행지 검색 기능 등 제공
+                    </li>
+                </ul>
             </div>
 
             {/* 느낀점 */}
