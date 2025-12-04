@@ -25,17 +25,19 @@ export function Travel_diary() {
             </div>
 
             {/* URL */}
-            <div className="flex flex-col md:flex-row gap-4">
-                <Link className="flex-1 p-4 bg-[#D9D9D9] rounded-md hover:bg-gray-300 transition text-center" href="https://travel-diary.hyerin.store" target="_blank">
-                    <span className="font-semibold">Travel_Diary 바로가기</span>
-                </Link>
-
-                <Link className="flex-1 p-4 bg-[#D9D9D9] rounded-md hover:bg-gray-300 transition text-center" href="https://github.com/hyerin1219/bookPath" target="_blank">
+            <div className="flex flex-col items-center  md:flex-row gap-4">
+                <div className="flex-1 w-full flex items-center gap-3 border-2 p-2 rounded-lg">
+                    <img className="w-15" src="image/travel_diary/qr.png" alt="" />
+                    <Link className="w-full p-4 bg-[#D9D9D9] rounded-md hover:bg-gray-300 transition text-center" href="https://travel-diary.hyerin.store" target="_blank">
+                        <span className="font-semibold">Travel_Diary 바로가기</span>
+                    </Link>
+                </div>
+                <Link className="flex-1 w-full  p-4 bg-[#D9D9D9] rounded-md hover:bg-gray-300 transition text-center" href="https://github.com/hyerin1219/bookPath" target="_blank">
                     <img className="h-6 mr-2" src="image/ico_github.png" alt="GitHub" />
                     <span>GitHub 가기</span>
                 </Link>
 
-                <Link className="flex-1 p-4 bg-[#D9D9D9] rounded-md hover:bg-gray-300 transition text-center" href="https://figmashort.link/wx6mfH" target="_blank">
+                <Link className="flex-1 w-full  p-4 bg-[#D9D9D9] rounded-md hover:bg-gray-300 transition text-center" href="https://figmashort.link/wx6mfH" target="_blank">
                     <img className="h-6 mr-2" src="image/ico_figma.png" alt="Figma" />
                     <span>Figma 가기</span>
                 </Link>
@@ -81,9 +83,14 @@ export function Travel_diary() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {[
                         {
-                            img: '/image/travel_diary/img_main.png',
+                            img: '/image/travel_diary/img_main_v2.png',
                             title: '메인 화면',
-                            desc: ['배열 기반으로 메뉴 정보 관리', 'Framer Motion으로 애니메이션을 적용해 사용자 경험 강화', 'useAuth 훅을 통해 로그인 여부를 확인하여, 인증이 필요한 메뉴 이동 제한'],
+                            desc: ['useAuth 훅을 통해 로그인 여부를 확인하여, 인증이 필요한 메뉴 이동 제한', '외교부 여행 경보 제도 api를 이용하여 여행 주의 국가 데이터 출력 후 단계별 데이터 필터링', '여행지 검색창에서 입력된 검색어를 router query를 이용하여 지도 페이지로 이동한 뒤 검색어에 맞는 위치의 지도 로드 ', '경보 단계별 색상·라벨를 재사용 가능하게 구현'],
+                        },
+                        {
+                            img: '/image/travel_diary/img07.png',
+                            title: '여행 주의 국가 정보 모달',
+                            desc: ['다이얼로그 컴포넌트를 이용하여 모달창 생성', '데이터가 없거나 단계가 null인 경우 필터링하여 필요한 정보를 깔끔하게 구현'],
                         },
                         {
                             img: '/image/travel_diary/img01.png',
@@ -160,6 +167,11 @@ export function Travel_diary() {
             {/* 사용자 피드백 반영 내용 */}
             <div className="space-y-2">
                 <p className="text-[#519AD6] font-bold md:text-xl text-lg">사용자 피드백 반영 내용</p>
+                <div className="flex items-center justify-between">
+                    <img className="w-[47%] mb-2 rounded-md shadow-[2px_2px_6px_rgba(0,0,0,0.3)]" src="/image/travel_diary/img_main.png" alt="메인 화면 변경 전" />
+                    <span className="text-2xl">➡︎</span>
+                    <img className="w-[47%] mb-2 rounded-md shadow-[2px_2px_6px_rgba(0,0,0,0.3)]" src="/image/travel_diary/img_main_v2.png" alt="메인 화면 변경 후" />
+                </div>
                 <ul>
                     <li className="flex items-center gap-2">
                         <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full"></span>
@@ -175,7 +187,7 @@ export function Travel_diary() {
                     </li>
                     <li className="flex items-center gap-2">
                         <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full"></span>
-                        서비스 콘셉트(여행)에 맞춘 맞춤형 콘텐츠 추가 — 여행 주의 국가 정보, 메인 페이지 여행지 검색 기능 등 제공
+                        서비스 콘셉트에 맞춘 콘텐츠 추가 — 여행 주의 국가 정보, 메인 페이지 여행지 검색 기능 등 제공
                     </li>
                 </ul>
             </div>
