@@ -17,7 +17,7 @@ export default function Main() {
 
                         {/* 링크 버튼 */}
                         <div className="flex justify-center flex-wrap gap-6">
-                            <Link href="./aboutMe" className="relative group flex items-center gap-2 px-4 py-2 bg-white rounded-lg shadow hover:shadow-lg transition">
+                            <Link href="/aboutMe" className="relative group flex items-center gap-2 px-4 py-2 bg-white rounded-lg shadow hover:shadow-lg transition">
                                 {/* 기본 이미지 */}
                                 <img className="h-6 mr-3 transition-opacity duration-200 group-hover:opacity-0" src="./image/icon_folder.png" alt="" />
                                 {/* hover 이미지 */}
@@ -25,7 +25,7 @@ export default function Main() {
                                 About
                             </Link>
 
-                            <Link href="./project" className="relative  group flex items-center gap-2 px-4 py-2 bg-white rounded-lg shadow hover:shadow-lg transition">
+                            <Link href="/project" className="relative  group flex items-center gap-2 px-4 py-2 bg-white rounded-lg shadow hover:shadow-lg transition">
                                 {/* 기본 이미지 */}
                                 <img className="h-6 mr-3 transition-opacity duration-200 group-hover:opacity-0" src="./image/icon_folder.png" alt="" />
                                 {/* hover 이미지 */}

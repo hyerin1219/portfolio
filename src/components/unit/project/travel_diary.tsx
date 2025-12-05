@@ -32,12 +32,12 @@ export function Travel_diary() {
                         <span className="font-semibold">Travel_Diary 바로가기</span>
                     </Link>
                 </div>
-                <Link className="flex-1 w-full  p-4 bg-[#D9D9D9] rounded-md hover:bg-gray-300 transition text-center" href="https://github.com/hyerin1219/bookPath" target="_blank">
+                <Link className="flex-1 w-full  p-4 bg-[#D9D9D9] rounded-md hover:bg-gray-300 transition text-center" href="https://github.com/calmer-ty/travel-diary" target="_blank">
                     <img className="h-6 mr-2" src="image/ico_github.png" alt="GitHub" />
                     <span>GitHub 가기</span>
                 </Link>
 
-                <Link className="flex-1 w-full  p-4 bg-[#D9D9D9] rounded-md hover:bg-gray-300 transition text-center" href="https://figmashort.link/wx6mfH" target="_blank">
+                <Link className="flex-1 w-full  p-4 bg-[#D9D9D9] rounded-md hover:bg-gray-300 transition text-center" href="https://www.figma.com/design/rUgWqqHylNWznqosWIqEfI/%ED%8A%B8%EB%A0%88%EB%B8%94-%EB%8B%A4%EC%9D%B4%EC%96%B4%EB%A6%AC?node-id=0-1&p=f&t=Du20DGC3WrXMBmIP-0" target="_blank">
                     <img className="h-6 mr-2" src="image/ico_figma.png" alt="Figma" />
                     <span>Figma 가기</span>
                 </Link>
@@ -61,8 +61,8 @@ export function Travel_diary() {
             <div className="space-y-2">
                 <p className="text-[#519AD6] font-bold md:text-xl text-lg">주요 기능</p>
                 <ul>
-                    <li className="flex items-center gap-2">
-                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full"></span>
+                    <li className="flex  gap-2">
+                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full md:mt-3 mt-2"></span>
                         Google map를 활용하여 여행에 관한 정보를 마커로 등록
                     </li>
                     <li className="flex items-center gap-2">
@@ -173,21 +173,21 @@ export function Travel_diary() {
                     <img className="w-[47%] mb-2 rounded-md shadow-[2px_2px_6px_rgba(0,0,0,0.3)]" src="/image/travel_diary/img_main_v2.png" alt="메인 화면 변경 후" />
                 </div>
                 <ul>
-                    <li className="flex items-center gap-2">
-                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full"></span>
+                    <li className="flex gap-2">
+                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full md:mt-3 mt-2"></span>
                         사용자 경험을 고려한 직관적인 UI 구조로 전면 재정비
                     </li>
-                    <li className="flex items-center gap-2">
-                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full"></span>
+                    <li className="flex gap-2">
+                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full md:mt-3 mt-2"></span>
                         브랜드 가독성을 높이기 위한 로고 리디자인 작업 수행
                     </li>
-                    <li className="flex items-center gap-2">
-                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full"></span>
+                    <li className="flex gap-2">
+                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full md:mt-3 mt-2"></span>
                         주요 기능을 한눈에 파악할 수 있도록 전체 메뉴 구조
                     </li>
-                    <li className="flex items-center gap-2">
-                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full"></span>
-                        서비스 콘셉트에 맞춘 콘텐츠 추가 — 여행 주의 국가 정보, 메인 페이지 여행지 검색 기능 등 제공
+                    <li className="flex  gap-2">
+                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full md:mt-3 mt-2"></span>
+                        콘텐츠 추가 — 여행 주의 국가 정보, 메인 페이지 여행지 검색 기능 등 제공
                     </li>
                 </ul>
             </div>
