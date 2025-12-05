@@ -28,8 +28,8 @@ export function Travel_diary() {
             <div className="flex flex-col items-center  md:flex-row gap-4">
                 <div className="flex-1 w-full flex items-center gap-3 border-2 p-2 rounded-lg">
                     <img className="w-15" src="image/travel_diary/qr.png" alt="" />
-                    <Link className="w-full p-4 bg-[#D9D9D9] rounded-md hover:bg-gray-300 transition text-center" href="https://travel-diary.hyerin.store" target="_blank">
-                        <span className="font-semibold">Travel_Diary 바로가기</span>
+                    <Link className="w-[calc(100%_-_80px)] p-4 bg-[#D9D9D9] rounded-md hover:bg-gray-300 transition text-center" href="https://travel-diary.hyerin.store" target="_blank">
+                        <span className="font-semibold">Travel Diary 바로가기</span>
                     </Link>
                 </div>
                 <Link className="flex-1 w-full  p-4 bg-[#D9D9D9] rounded-md hover:bg-gray-300 transition text-center" href="https://github.com/calmer-ty/travel-diary" target="_blank">
