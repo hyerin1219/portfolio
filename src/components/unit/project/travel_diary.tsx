@@ -169,7 +169,7 @@ export function Travel_diary() {
                 <p className="text-[#519AD6] font-bold md:text-xl text-lg">사용자 피드백 반영 내용</p>
                 <div className="flex items-center justify-between">
                     <img className="w-[47%] mb-2 rounded-md shadow-[2px_2px_6px_rgba(0,0,0,0.3)]" src="/image/travel_diary/img_main.png" alt="메인 화면 변경 전" />
-                    <span className="text-2xl">➡︎</span>
+                    <span className="text-xl">➡︎</span>
                     <img className="w-[47%] mb-2 rounded-md shadow-[2px_2px_6px_rgba(0,0,0,0.3)]" src="/image/travel_diary/img_main_v2.png" alt="메인 화면 변경 후" />
                 </div>
                 <ul>
@@ -183,7 +183,7 @@ export function Travel_diary() {
                     </li>
                     <li className="flex gap-2">
                         <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full md:mt-3 mt-2"></span>
-                        주요 기능을 한눈에 파악할 수 있도록 전체 메뉴 구조
+                        주요 기능을 한눈에 파악할 수 있도록 전체 메뉴 구조 추가
                     </li>
                     <li className="flex  gap-2">
                         <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full md:mt-3 mt-2"></span>

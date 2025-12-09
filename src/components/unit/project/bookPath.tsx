@@ -77,9 +77,9 @@ export function BookPath() {
                     {/* 각 기능 블록 */}
                     {[
                         {
-                            img: '/image/book_path/img_main.png',
+                            img: '/image/book_path/img_main_ver2.png',
                             title: '메인 화면',
-                            desc: ["최신 등록 기준 '오늘의 책 추천' 기능을 Embla Carousel 라이브러리를 활용한 슬라이드 컴포넌트로 구현"],
+                            desc: ["최신 등록 기준 '오늘의 책 추천' 기능을 Embla Carousel 라이브러리를 활용한 슬라이드 컴포넌트로 구현", '로그인한 사용자 기준으로 월별 독서량을 Recharts 플러그인으로 구현', '검색어를 router query를 이용하여 검색 페이지로 이동한 뒤 결과가 보여지게 구현', '햄버거 버튼을 이용한 메뉴바 구현'],
                         },
                         {
                             img: '/image/book_path/img03.png',
@@ -131,6 +131,26 @@ export function BookPath() {
                         </div>
                     ))}
                 </div>
+            </div>
+
+            {/* 사용자 피드백 반영 내용 */}
+            <div className="space-y-2">
+                <p className="text-[#519AD6] font-bold md:text-xl text-lg">사용자 피드백 반영 내용</p>
+                <div className="flex items-center justify-between">
+                    <img className="w-[47%] mb-2 rounded-md shadow-[2px_2px_6px_rgba(0,0,0,0.3)]" src="/image/book_path/img_main.png" alt="메인 화면 변경 전" />
+                    <span className="text-xl">➡︎</span>
+                    <img className="w-[47%] mb-2 rounded-md shadow-[2px_2px_6px_rgba(0,0,0,0.3)]" src="/image/book_path/img_main_ver2.png" alt="메인 화면 변경 후" />
+                </div>
+                <ul>
+                    <li className="flex gap-2">
+                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full md:mt-3 mt-2"></span>
+                        주요 기능을 한눈에 파악할 수 있도록 전체 메뉴 추가
+                    </li>
+                    <li className="flex  gap-2">
+                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full md:mt-3 mt-2"></span>
+                        콘텐츠 추가 — 사용자 월별 독후감 작성 양, 메인 페이지 책 검색 기능 제공
+                    </li>
+                </ul>
             </div>
 
             {/* 오류 해결 / 향후 계획 */}
