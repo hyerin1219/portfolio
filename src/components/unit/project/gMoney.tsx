@@ -29,10 +29,10 @@ export function GMoney() {
             <div className="space-y-2">
                 <p className="text-[#519AD6] font-bold md:text-xl text-lg">스킬</p>
                 <div className="flex flex-wrap items-center gap-4">
-                    <img className="h-8" src="image/ico_react.png" alt="React" />
-                    <img className="h-8" src="image/ico_typescript.png" alt="TypeScript" />
-                    <img className="h-4" src="image/ico_nextjs_ver2.png" alt="Next.js" />
-                    <img className="h-8" src="image/ico_firebase.png" alt="Firebase" />
+                    <img className="h-8" src="/image/ico_react.png" alt="React" />
+                    <img className="h-8" src="/image/ico_typescript.png" alt="TypeScript" />
+                    <img className="h-4" src="/image/ico_nextjs_ver2.png" alt="Next.js" />
+                    <img className="h-8" src="/image/ico_firebase.png" alt="Firebase" />
                 </div>
                 <p>Next.js 기반으로 반응형 UI와 Firebase로 데이터 관리를 구현했습니다. 또한 emotion으로 스타일을 적용하였습니다.</p>
             </div>

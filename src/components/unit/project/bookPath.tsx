@@ -28,12 +28,12 @@ export function BookPath() {
             <div className="space-y-2">
                 <p className="text-[#519AD6] font-bold md:text-xl text-lg ">스킬</p>
                 <div className="flex flex-wrap items-center gap-4">
-                    <img className="h-8" src="image/ico_react.png" alt="React" />
-                    <img className="h-8" src="image/ico_typescript.png" alt="TypeScript" />
-                    <img className="h-4" src="image/ico_nextjs_ver2.png" alt="Next.js" />
-                    <img className="h-8" src="image/ico_tailwindcss.png" alt="TailwindCSS" />
-                    <img className="h-8" src="image/ico_firebase.png" alt="Firebase" />
-                    <img className="h-8" src="image/ico_figma.png" alt="Figma" />
+                    <img className="h-8" src="/image/ico_react.png" alt="React" />
+                    <img className="h-8" src="/image/ico_typescript.png" alt="TypeScript" />
+                    <img className="h-4" src="/image/ico_nextjs_ver2.png" alt="Next.js" />
+                    <img className="h-8" src="/image/ico_tailwindcss.png" alt="TailwindCSS" />
+                    <img className="h-8" src="/image/ico_firebase.png" alt="Firebase" />
+                    <img className="h-8" src="/image/ico_figma.png" alt="Figma" />
                 </div>
                 <p>Next.js의 동적 라우팅을 활용해 다양한 상세 페이지를 빠르고 효율적으로 구현했고, Firebase를 활용해 사용자 인증, 데이터 관리를 간편하게 구현했습니다. 또한 Tailwind CSS를 이용해 빠르고 효율적인 반응형 UI를 구현했습니다.</p>
             </div>
@@ -60,12 +60,12 @@ export function BookPath() {
             {/* 깃 / figma */}
             <div className="flex flex-col md:flex-row gap-4">
                 <Link className="flex-1 p-4 bg-[#D9D9D9] rounded-md hover:bg-gray-300 transition text-center" href="https://github.com/hyerin1219/bookPath" target="_blank">
-                    <img className="h-6 mr-2" src="image/ico_github.png" alt="GitHub" />
+                    <img className="h-6 mr-2" src="/image/ico_github.png" alt="GitHub" />
                     <span>GitHub 가기</span>
                 </Link>
 
                 <Link className="flex-1 p-4 bg-[#D9D9D9] rounded-md hover:bg-gray-300 transition text-center" href="https://figmashort.link/wx6mfH" target="_blank">
-                    <img className="h-6 mr-2" src="image/ico_figma.png" alt="Figma" />
+                    <img className="h-6 mr-2" src="/image/ico_figma.png" alt="Figma" />
                     <span>Figma 가기</span>
                 </Link>
             </div>

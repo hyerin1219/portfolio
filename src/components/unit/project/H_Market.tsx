@@ -28,10 +28,10 @@ export function H_Market() {
             <div className="space-y-2">
                 <p className="text-[#519AD6] font-bold md:text-xl text-lg">스킬</p>
                 <div className="flex flex-wrap items-center gap-4">
-                    <img className="h-8" src="image/ico_react.png" alt="React" />
-                    <img className="h-8" src="image/ico_typescript.png" alt="TypeScript" />
-                    <img className="h-4" src="image/ico_nextjs_ver2.png" alt="Next.js" />
-                    <img className="h-4" src="image/ico_figma.png" alt="Figma" />
+                    <img className="h-8" src="/image/ico_react.png" alt="React" />
+                    <img className="h-8" src="/image/ico_typescript.png" alt="TypeScript" />
+                    <img className="h-4" src="/image/ico_nextjs_ver2.png" alt="Next.js" />
+                    <img className="h-4" src="/image/ico_figma.png" alt="Figma" />
                 </div>
             </div>
 
@@ -60,7 +60,7 @@ export function H_Market() {
             {/* Git 링크 */}
             <div className="flex gap-4">
                 <Link href="https://github.com/hyerin1219/HeY-MARKET" target="_blank" className="flex-1 p-4 bg-[#D9D9D9] rounded-md hover:bg-gray-300 transition text-center flex items-center justify-center gap-2">
-                    <img className="h-6" src="image/ico_github.png" alt="GitHub" />
+                    <img className="h-6" src="/image/ico_github.png" alt="GitHub" />
                     <span>GitHub 바로가기</span>
                 </Link>
             </div>

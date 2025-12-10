@@ -27,18 +27,18 @@ export function Travel_diary() {
             {/* URL */}
             <div className="flex flex-col items-center  md:flex-row gap-4">
                 <div className="flex-1 w-full flex items-center gap-3 border-2 p-2 rounded-lg">
-                    <img className="w-15" src="image/travel_diary/qr.png" alt="" />
+                    <img className="w-15" src="/image/travel_diary/qr.png" alt="" />
                     <Link className="w-[calc(100%_-_80px)] p-4 bg-[#D9D9D9] rounded-md hover:bg-gray-300 transition text-center" href="https://travel-diary.hyerin.store" target="_blank">
                         <span className="font-semibold">Travel Diary 바로가기</span>
                     </Link>
                 </div>
                 <Link className="flex-1 w-full  p-4 bg-[#D9D9D9] rounded-md hover:bg-gray-300 transition text-center" href="https://github.com/calmer-ty/travel-diary" target="_blank">
-                    <img className="h-6 mr-2" src="image/ico_github.png" alt="GitHub" />
+                    <img className="h-6 mr-2" src="/image/ico_github.png" alt="GitHub" />
                     <span>GitHub 가기</span>
                 </Link>
 
                 <Link className="flex-1 w-full  p-4 bg-[#D9D9D9] rounded-md hover:bg-gray-300 transition text-center" href="https://www.figma.com/design/rUgWqqHylNWznqosWIqEfI/%ED%8A%B8%EB%A0%88%EB%B8%94-%EB%8B%A4%EC%9D%B4%EC%96%B4%EB%A6%AC?node-id=0-1&p=f&t=Du20DGC3WrXMBmIP-0" target="_blank">
-                    <img className="h-6 mr-2" src="image/ico_figma.png" alt="Figma" />
+                    <img className="h-6 mr-2" src="/image/ico_figma.png" alt="Figma" />
                     <span>Figma 가기</span>
                 </Link>
             </div>
@@ -47,12 +47,12 @@ export function Travel_diary() {
             <div className="space-y-2">
                 <p className="text-[#519AD6] font-bold md:text-xl text-lg">스킬</p>
                 <div className="flex flex-wrap items-center gap-4">
-                    <img className="h-8" src="image/ico_react.png" alt="React" />
-                    <img className="h-8" src="image/ico_typescript.png" alt="TypeScript" />
-                    <img className="h-4" src="image/ico_nextjs_ver2.png" alt="Next.js" />
-                    <img className="h-8" src="image/ico_tailwindcss.png" alt="TailwindCSS" />
-                    <img className="h-8" src="image/ico_firebase.png" alt="Firebase" />
-                    <img className="h-8" src="image/ico_figma.png" alt="Figma" />
+                    <img className="h-8" src="/image/ico_react.png" alt="React" />
+                    <img className="h-8" src="/image/ico_typescript.png" alt="TypeScript" />
+                    <img className="h-4" src="/image/ico_nextjs_ver2.png" alt="Next.js" />
+                    <img className="h-8" src="/image/ico_tailwindcss.png" alt="TailwindCSS" />
+                    <img className="h-8" src="/image/ico_firebase.png" alt="Firebase" />
+                    <img className="h-8" src="/image/ico_figma.png" alt="Figma" />
                 </div>
                 <p>Next.js로 성능을 최적화하고, Firebase로 인증 및 데이터 관리를 처리했습니다. Tailwind CSS로 반응형 UI를 구현했습니다.</p>
             </div>

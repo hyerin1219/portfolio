@@ -19,17 +19,17 @@ export default function Main() {
                         <div className="flex justify-center flex-wrap gap-6">
                             <Link href="/aboutMe" className="relative group flex items-center gap-2 px-4 py-2 bg-white rounded-lg shadow hover:shadow-lg transition">
                                 {/* 기본 이미지 */}
-                                <img className="h-6 mr-3 transition-opacity duration-200 group-hover:opacity-0" src="./image/icon_folder.png" alt="" />
+                                <img className="h-6 mr-3 transition-opacity duration-200 group-hover:opacity-0" src="/image/icon_folder.png" alt="" />
                                 {/* hover 이미지 */}
-                                <img className="h-6 mr-3 absolute top-2 left-4 transition-opacity duration-200 opacity-0 group-hover:opacity-100" src="./image/icon_folder_open.png" alt="" />
+                                <img className="h-6 mr-3 absolute top-2 left-4 transition-opacity duration-200 opacity-0 group-hover:opacity-100" src="/image/icon_folder_open.png" alt="" />
                                 About
                             </Link>
 
                             <Link href="/project" className="relative  group flex items-center gap-2 px-4 py-2 bg-white rounded-lg shadow hover:shadow-lg transition">
                                 {/* 기본 이미지 */}
-                                <img className="h-6 mr-3 transition-opacity duration-200 group-hover:opacity-0" src="./image/icon_folder.png" alt="" />
+                                <img className="h-6 mr-3 transition-opacity duration-200 group-hover:opacity-0" src="/image/icon_folder.png" alt="" />
                                 {/* hover 이미지 */}
-                                <img className="h-6 mr-3 absolute top-2 left-4 transition-opacity duration-200 opacity-0 group-hover:opacity-100" src="./image/icon_folder_open.png" alt="" />
+                                <img className="h-6 mr-3 absolute top-2 left-4 transition-opacity duration-200 opacity-0 group-hover:opacity-100" src="/image/icon_folder_open.png" alt="" />
                                 Project
                             </Link>
                         </div>
