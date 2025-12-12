@@ -1,49 +1,63 @@
+import CharBox from '@/components/ui/charBox';
 import HeaderBar from '@/components/ui/headerBar';
 import Link from 'next/link';
 
 export default function Main() {
     return (
-        <section className="w-full  flex flex-col">
-            <HeaderBar page="Frontend Portfolio" />
+        <section className="w-full md:h-full h-auto">
+            <div className="flex flex-col items-center justify-center md:gap-20 gap-10 w-full h-full md:flex-row ">
+                {/* 캐릭터 영역 */}
+                <CharBox />
 
-            <div className="p-3 pb-5">
-                <p className="text-lg font-bold">{`> Jeong Hye Rin`}</p>
-
-                <div className="flex flex-col-reverse md:flex-row items-center justify-between p-6 md:p-12 gap-8">
-                    {/* 왼쪽: 소개 */}
-                    <div className="flex-1 space-y-6 text-justify">
-                        <p className="text-xl md:text-2xl font-semibold text-gray-700">안녕하세요. 키보드 글자가 지워질 때까지 몰입하며 코딩하는 신입 개발자 정혜린입니다.</p>
-                        <p className="text-gray-600">React, Next.js, TypeScript 등 다양한 기술을 활용하여 사용자 친화적인 인터페이스와 경험을 구현하며, HTML/CSS 기반 디지털 콘텐츠 제작 경험과 사내 라이브러리 개선 경험을 보유하고 있습니다.</p>
-
-                        {/* 링크 버튼 */}
-                        <div className="flex justify-center flex-wrap gap-6">
-                            <Link href="/aboutMe" className="relative group flex items-center gap-2 px-4 py-2 bg-white rounded-lg shadow hover:shadow-lg transition">
-                                {/* 기본 이미지 */}
-                                <img className="h-6 mr-3 transition-opacity duration-200 group-hover:opacity-0" src="/image/icon_folder.png" alt="" />
-                                {/* hover 이미지 */}
-                                <img className="h-6 mr-3 absolute top-2 left-4 transition-opacity duration-200 opacity-0 group-hover:opacity-100" src="/image/icon_folder_open.png" alt="" />
-                                About
-                            </Link>
-
-                            <Link href="/project" className="relative  group flex items-center gap-2 px-4 py-2 bg-white rounded-lg shadow hover:shadow-lg transition">
-                                {/* 기본 이미지 */}
-                                <img className="h-6 mr-3 transition-opacity duration-200 group-hover:opacity-0" src="/image/icon_folder.png" alt="" />
-                                {/* hover 이미지 */}
-                                <img className="h-6 mr-3 absolute top-2 left-4 transition-opacity duration-200 opacity-0 group-hover:opacity-100" src="/image/icon_folder_open.png" alt="" />
-                                Project
-                            </Link>
+                {/* 텍스트 영역 */}
+                <div className="w-full md:w-130">
+                    <div className="w-full border-3 rounded-xl shadow-xl p-5 space-y-5">
+                        {/* Title Box */}
+                        <div className="flex items-center justify-center gap-3 p-2 bg-[#FFE38F] rounded-xl text-xl shadow-[3px_3px_0_0_#FFC824]">
+                            <img className="w-8" src="/image/ico_item01.png" alt="" />
+                            <span>캐릭터 정보</span>
                         </div>
+
+                        <div className="flex items-center gap-3">
+                            <span className="text-lg font-semibold">이름</span>
+                            <p className="flex-1 px-3 py-2 border border-2 border-[#5A4630] rounded-lg  text-[#5A4630]">정혜린</p>
+                        </div>
+                        <div className="flex items-center gap-3">
+                            <span className="text-lg font-semibold">레벨</span>
+                            <p className="flex-1 px-3 py-2 border border-2 border-[#5A4630] rounded-lg  text-[#5A4630]">Lv.0</p>
+                        </div>
+                        <div className="flex items-center gap-3">
+                            <span className="text-lg font-semibold">전직</span>
+                            <p className="relative flex-1 px-3 py-2 border border-2 border-[#5A4630] rounded-lg  text-[#5A4630]">
+                                프론트엔드 개발자
+                                <span
+                                    className="absolute top-3 right-5 w-0 h-0 
+                                    border-l-[10px] border-l-transparent
+                                    border-r-[10px] border-r-transparent
+                                    border-t-[15px] border-t-[#5A4630]"
+                                ></span>
+                            </p>
+                        </div>
+
+                        <div className="flex  gap-3">
+                            <span className="flex-shrink-0 text-lg font-semibold">스킬</span>
+                            <p className="flex-1 px-3 py-2 border border-2 border-[#5A4630] rounded-lg  text-[#5A4630]">React TypeScript Next.js TailwindCSS HTML CSS Firebase Figma</p>
+                        </div>
+
+                        {/* <div className="text-lg font-semibold">gpfls662@gmail.com</div> */}
                     </div>
 
-                    {/* 오른쪽: 프로필 사진 */}
-                    <div className="flex-1 flex justify-center md:justify-end">
-                        <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-lg">
-                            <img
-                                src="/image/img_char.png" // 실제 사진 경로
-                                alt="Profile"
-                                className="w-full h-full object-cover"
-                            />
-                        </div>
+                    {/* 버튼 */}
+                    <div className="flex justify-center gap-5 mt-8">
+                        <Link href="/aboutMe" className="flex items-center gap-4 p-2 px-8 bg-[#C5DFFF] rounded-xl shadow-[3px_3px_0_0_#A9D8FF] hover:shadow-[5px_5px_0_0_#A9D8FF] transition-all">
+                            <img className="h-12" src="/image/ico_item02.png" alt="" />
+                            <span> About</span>
+                        </Link>
+
+                        <Link href="/project" className="flex items-center gap-4 p-2 px-8 bg-[#C5DFFF] rounded-xl shadow-[3px_3px_0_0_#A9D8FF] hover:shadow-[5px_5px_0_0_#A9D8FF] transition-all">
+                            <img className="h-12" src="/image/ico_item03.png" alt="" />
+                            <span> Project</span>
+                        </Link>
                     </div>
                 </div>
             </div>

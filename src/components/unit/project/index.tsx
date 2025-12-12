@@ -26,23 +26,42 @@ export default function Project() {
     };
 
     return (
-        <section className="w-full">
-            {/* Header */}
-            <HeaderBar page="Project" />
+        <section className="w-full md:h-full h-auto">
+            {/* 상단 */}
+            <div className="flex items-center justify-center gap-5">
+                <div className="flex-shrink-0 w-45 h-45 rounded-full overflow-hidden bg-[#FFE7E5] shadow-[3px_3px_0_0_#FF7A70]">
+                    <img className="w-full" src="/image/img_char01.png" alt="" />
+                </div>
 
-            {/* Body */}
-            <div className="p-3 pb-5 space-y-8">
-                <p className="text-lg font-bold">{`> Projects`}</p>
-
+                <div className="text-lg">이 모험가가 지금까지 진행한 주요 퀘스트 목록을 확인해보세요.</div>
+            </div>
+            <div className="p-5 grid place-items-center grid-cols-1 md:grid-cols-2 gap-8">
                 {Object.keys(Projects).map((projectName) => {
                     const imageUrl = `/image/${projectName}.png`;
+
                     return (
-                        <div key={projectName} className="flex flex-col items-center space-y-2">
+                        <div key={projectName} className="space-y-2 text-center">
                             {/* 프로젝트 이름 */}
-                            <p className="text-xl font-semibold">{projectName}</p>
+                            <p className="text-lg font-bold flex items-center justify-center gap-2">
+                                <span className="w-2 h-2 bg-[#7FAAFF] rounded-full"></span>
+                                {projectName}
+                            </p>
 
                             {/* 이미지 버튼 */}
-                            <button onClick={() => handleClick(projectName)} style={{ backgroundImage: `url(${imageUrl})` }} className="w-[300px] h-[164px] md:w-[600px] md:h-[327px]  border bg-cover bg-no-repeat shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)] transition-transform duration-300 hover:scale-105"></button>
+                            <button
+                                onClick={() => handleClick(projectName)}
+                                style={{ backgroundImage: `url(${imageUrl})` }}
+                                className="
+                        w-[260px] h-[150px]
+                        md:w-[400px] md:h-[230px]
+                        bg-cover bg-no-repeat bg-center
+                        rounded-lg
+                        border-2 border-[#A9D8FF]
+                        shadow-[3px_3px_0_0_#7FAAFF]
+                        hover:scale-105
+                        transition-all
+                    "
+                            />
                         </div>
                     );
                 })}
