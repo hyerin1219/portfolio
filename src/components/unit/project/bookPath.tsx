@@ -136,10 +136,10 @@ export function BookPath() {
             {/* 사용자 피드백 반영 내용 */}
             <div className="space-y-2">
                 <p className="text-[#519AD6] font-bold md:text-xl text-lg">사용자 피드백 반영 내용</p>
-                <div className="flex items-center justify-between">
-                    <img className="w-[47%] mb-2 rounded-md shadow-[2px_2px_6px_rgba(0,0,0,0.3)]" src="/image/book_path/img_main.png" alt="메인 화면 변경 전" />
+                <div className="flex items-center justify-between flex-col md:flex-row">
+                    <img className="md:w-[47%] w-full mb-2 rounded-md shadow-[2px_2px_6px_rgba(0,0,0,0.3)]" src="/image/travel_diary/img_main.png" alt="메인 화면 변경 전" />
                     <span className="text-xl">➡︎</span>
-                    <img className="w-[47%] mb-2 rounded-md shadow-[2px_2px_6px_rgba(0,0,0,0.3)]" src="/image/book_path/img_main_ver2.png" alt="메인 화면 변경 후" />
+                    <img className="md:w-[47%] w-full mb-2 rounded-md shadow-[2px_2px_6px_rgba(0,0,0,0.3)]" src="/image/travel_diary/img_main_v2.png" alt="메인 화면 변경 후" />
                 </div>
                 <ul>
                     <li className="flex gap-2">

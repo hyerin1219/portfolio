@@ -17,7 +17,7 @@ export default function Project() {
         BookPath,
         Travel_diary,
         GMoney,
-        H_Market,
+        // H_Market,
     };
 
     const handleClick = (project: string) => {
@@ -29,13 +29,13 @@ export default function Project() {
         <section className="w-full md:h-full h-auto">
             {/* 상단 */}
             <div className="flex items-center justify-center gap-5">
-                <div className="flex-shrink-0 w-45 h-45 rounded-full overflow-hidden bg-[#FFE7E5] shadow-[3px_3px_0_0_#FF7A70]">
+                <div className="flex-shrink-0 w-30 h-30 md:w-45 md:h-45 rounded-full overflow-hidden bg-[#FFE7E5] shadow-[3px_3px_0_0_#FF7A70]">
                     <img className="w-full" src="/image/img_char01.png" alt="" />
                 </div>
 
-                <div className="text-lg">이 모험가가 지금까지 진행한 주요 퀘스트 목록을 확인해보세요.</div>
+                <div className="text-lg text-justify">이 모험가가 지금까지 진행한 주요 퀘스트 목록을 확인해보세요.</div>
             </div>
-            <div className="p-5 grid place-items-center grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="p-5 flex flex-wrap items-center justify-center gap-5">
                 {Object.keys(Projects).map((projectName) => {
                     const imageUrl = `/image/${projectName}.png`;
 

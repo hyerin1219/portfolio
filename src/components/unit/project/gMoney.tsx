@@ -53,7 +53,7 @@ export function GMoney() {
             {/* Git 링크 */}
             <div className="flex flex-col md:flex-row gap-4">
                 <Link href="https://github.com/hyerin1219/gMoney" target="_blank" className="flex-1 p-4 bg-[#D9D9D9] rounded-md hover:bg-gray-300 transition text-center inline-flex items-center justify-center gap-2">
-                    <img className="h-6" src="image/ico_github.png" alt="GitHub" />
+                    <img className="h-6" src="/image/ico_github.png" alt="GitHub" />
                     <span>GitHub 바로가기</span>
                 </Link>
             </div>

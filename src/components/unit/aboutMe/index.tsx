@@ -58,7 +58,7 @@ export default function AboutMe() {
                         <div className="space-y-10">
                             {/* 어벤저스 */}
                             <div className="space-y-2">
-                                <div className="flex items-center gap-2">
+                                <div className="flex items-start gap-2  flex-col sm:flex-row sm:items-center">
                                     <span className="text-gray-600">2023.03 ~ 2025.06</span>
                                     <span className="font-bold text-[#2857A4]">(주)어벤저스 | 주임 · 퍼블리셔</span>
                                 </div>
@@ -88,7 +88,7 @@ export default function AboutMe() {
 
                             {/* 제과,제빵 */}
                             <div className="space-y-2">
-                                <div className="flex items-center gap-2">
+                                <div className="flex items-start gap-2  flex-col sm:flex-row sm:items-center">
                                     <span className="text-gray-600">2016 ~ 2022</span>
                                     <span className="font-bold text-[#2857A4]">제과·제빵 생산 및 관리</span>
                                 </div>
