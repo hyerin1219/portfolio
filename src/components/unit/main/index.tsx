@@ -1,11 +1,10 @@
 import CharBox from '@/components/ui/charBox';
-import HeaderBar from '@/components/ui/headerBar';
 import Link from 'next/link';
 
 export default function Main() {
     return (
         <section className="w-full md:h-full h-auto">
-            <div className="flex flex-col items-center justify-center md:gap-20 gap-10 w-full h-full md:flex-row ">
+            <div className="flex flex-col items-center justify-center w-full h-full  md:gap-20 gap-10 w-full md:flex-row">
                 {/* 캐릭터 영역 */}
                 <CharBox />
 
@@ -43,20 +42,23 @@ export default function Main() {
                             <span className="flex-shrink-0 text-lg font-semibold">스킬</span>
                             <p className="flex-1 px-3 py-2 border border-2 border-[#5A4630] rounded-lg  text-[#5A4630]">React TypeScript Next.js TailwindCSS HTML CSS Firebase Figma</p>
                         </div>
-
-                        {/* <div className="text-lg font-semibold">gpfls662@gmail.com</div> */}
                     </div>
 
                     {/* 버튼 */}
-                    <div className="flex justify-center gap-5 mt-8">
-                        <Link href="/aboutMe" className="flex items-center gap-4 p-2 px-8 bg-[#C5DFFF] rounded-xl shadow-[3px_3px_0_0_#A9D8FF] hover:shadow-[5px_5px_0_0_#A9D8FF] transition-all">
-                            <img className="h-12" src="/image/ico_item02.png" alt="" />
+                    <div className="flex justify-center flex-wrap gap-5 mt-8">
+                        <Link href="/aboutMe" className="flex items-center justify-center gap-2 p-2 px-5 bg-[#C5DFFF] rounded-xl shadow-[3px_3px_0_0_#A9D8FF] hover:shadow-[5px_5px_0_0_#A9D8FF] transition-all">
+                            <img className="h-8" src="/image/ico_item07.png" alt="" />
                             <span> About</span>
                         </Link>
 
-                        <Link href="/project" className="flex items-center gap-4 p-2 px-8 bg-[#C5DFFF] rounded-xl shadow-[3px_3px_0_0_#A9D8FF] hover:shadow-[5px_5px_0_0_#A9D8FF] transition-all">
+                        <Link href="/project" className="flex items-center justify-center gap-2 p-2 px-5 bg-[#C5DFFF] rounded-xl shadow-[3px_3px_0_0_#A9D8FF] hover:shadow-[5px_5px_0_0_#A9D8FF] transition-all">
                             <img className="h-12" src="/image/ico_item03.png" alt="" />
                             <span> Project</span>
+                        </Link>
+
+                        <Link href="/career" className="flex items-center justify-center gap-2 p-2 px-5 bg-[#C5DFFF] rounded-xl shadow-[3px_3px_0_0_#A9D8FF] hover:shadow-[5px_5px_0_0_#A9D8FF] transition-all">
+                            <img className="h-12" src="/image/ico_item02.png" alt="" />
+                            <span>Career</span>
                         </Link>
                     </div>
                 </div>

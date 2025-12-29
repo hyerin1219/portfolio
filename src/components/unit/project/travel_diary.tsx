@@ -62,15 +62,15 @@ export function Travel_diary() {
                 <p className="text-[#519AD6] font-bold md:text-xl text-lg">주요 기능</p>
                 <ul>
                     <li className="flex  gap-2">
-                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full md:mt-3 mt-2"></span>
+                        <span>•</span>
                         Google map를 활용하여 여행에 관한 정보를 마커로 등록
                     </li>
                     <li className="flex items-center gap-2">
-                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full"></span>
+                        <span>•</span>
                         사용자가 작성한 여행 일기 목록 조회 및 관리 기능
                     </li>
                     <li className="flex items-center gap-2">
-                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full"></span>
+                        <span>•</span>
                         간단한 미니 게임(룰렛·주사위) 제공
                     </li>
                 </ul>
@@ -125,7 +125,7 @@ export function Travel_diary() {
                             <ul className="space-y-1">
                                 {item.desc.map((el, idx) => (
                                     <li key={idx} className="flex gap-2">
-                                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full md:mt-3 mt-2"></span>
+                                        <span>•</span>
                                         {el}
                                     </li>
                                 ))}
@@ -174,19 +174,19 @@ export function Travel_diary() {
                 </div>
                 <ul>
                     <li className="flex gap-2">
-                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full md:mt-3 mt-2"></span>
+                        <span>•</span>
                         사용자 경험을 고려한 직관적인 UI 구조로 전면 재정비
                     </li>
                     <li className="flex gap-2">
-                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full md:mt-3 mt-2"></span>
+                        <span>•</span>
                         브랜드 가독성을 높이기 위한 로고 리디자인 작업 수행
                     </li>
                     <li className="flex gap-2">
-                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full md:mt-3 mt-2"></span>
+                        <span>•</span>
                         주요 기능을 한눈에 파악할 수 있도록 전체 메뉴 구조 추가
                     </li>
                     <li className="flex  gap-2">
-                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full md:mt-3 mt-2"></span>
+                        <span>•</span>
                         콘텐츠 추가 — 여행 주의 국가 정보, 메인 페이지 여행지 검색 기능 등 제공
                     </li>
                 </ul>
@@ -197,10 +197,10 @@ export function Travel_diary() {
                 <p className="text-[#519AD6] font-bold md:text-xl text-lg ">느낀점</p>
                 <ul>
                     <li className="flex items-center gap-2">
-                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full "></span>리팩토링 과정에서 로직 분리와 상태 관리의 중요성을 깨달음
+                        <span>•</span>리팩토링 과정에서 로직 분리와 상태 관리의 중요성을 깨달음
                     </li>
                     <li className="flex items-center gap-2">
-                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full "></span>공통 로직을 Hook으로 관리하니 유지보수성과 재사용성이 크게 향상됨
+                        <span>•</span>공통 로직을 Hook으로 관리하니 유지보수성과 재사용성이 크게 향상됨
                     </li>
                 </ul>
             </div>

@@ -123,7 +123,7 @@ export function BookPath() {
                             <ul className="space-y-1">
                                 {item.desc.map((el, idx) => (
                                     <li className="flex  gap-2" key={idx}>
-                                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full md:mt-3 mt-2"></span>
+                                        <span>•</span>
                                         {el}
                                     </li>
                                 ))}
@@ -137,17 +137,17 @@ export function BookPath() {
             <div className="space-y-2">
                 <p className="text-[#519AD6] font-bold md:text-xl text-lg">사용자 피드백 반영 내용</p>
                 <div className="flex items-center justify-between flex-col md:flex-row">
-                    <img className="md:w-[47%] w-full mb-2 rounded-md shadow-[2px_2px_6px_rgba(0,0,0,0.3)]" src="/image/travel_diary/img_main.png" alt="메인 화면 변경 전" />
+                    <img className="md:w-[47%] w-full mb-2 rounded-md shadow-[2px_2px_6px_rgba(0,0,0,0.3)]" src="/image/book_path/img_main.png" alt="메인 화면 변경 전" />
                     <span className="text-xl">➡︎</span>
-                    <img className="md:w-[47%] w-full mb-2 rounded-md shadow-[2px_2px_6px_rgba(0,0,0,0.3)]" src="/image/travel_diary/img_main_v2.png" alt="메인 화면 변경 후" />
+                    <img className="md:w-[47%] w-full mb-2 rounded-md shadow-[2px_2px_6px_rgba(0,0,0,0.3)]" src="/image/book_path/img_main_ver2.png" alt="메인 화면 변경 후" />
                 </div>
                 <ul>
                     <li className="flex gap-2">
-                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full md:mt-3 mt-2"></span>
+                        <span>•</span>
                         주요 기능을 한눈에 파악할 수 있도록 전체 메뉴 추가
                     </li>
                     <li className="flex  gap-2">
-                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full md:mt-3 mt-2"></span>
+                        <span>•</span>
                         콘텐츠 추가 — 사용자 월별 독후감 작성 양, 메인 페이지 책 검색 기능 제공
                     </li>
                 </ul>
@@ -171,10 +171,10 @@ export function BookPath() {
                 <p className="text-[#519AD6] font-bold md:text-xl text-lg ">향후 계획</p>
                 <ul>
                     <li className="flex items-center gap-2">
-                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full "></span>책갈피 모임 댓글 기능 추가 예정
+                        <span>•</span> 책갈피 모임 댓글 기능 추가 예정
                     </li>
                     <li className="flex items-center gap-2">
-                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full "></span>Firebase Functions을 이용해 배포
+                        <span>•</span> Firebase Functions을 이용해 배포
                     </li>
                 </ul>
             </div>

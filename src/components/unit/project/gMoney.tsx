@@ -10,7 +10,7 @@ export function GMoney() {
             {/* 소개 */}
             <div className="space-y-2">
                 <p className="text-[#519AD6] font-bold md:text-xl text-lg">소개</p>
-                <p>경기지역카드 사용자가 가맹점을 검색하고 즐겨찾기에 등록하며, 차별 거래를 신고할 수 있는 웹사이트를 제작했습니다.</p>
+                <p>경기지역카드 사용자가 가맹점을 검색하고, 차별 거래를 신고할 수 있는 서비스를 제작했습니다.</p>
             </div>
 
             {/* 기간 / 인원 */}
@@ -39,13 +39,23 @@ export function GMoney() {
 
             {/* 주요 기능 */}
             <div className="space-y-2">
-                <p className="text-[#519AD6] font-bold md:text-xl text-lg">주요 기능</p>
+                <p className="text-[#519AD6] font-bold md:text-xl text-lg">핵심 기능</p>
                 <ul className="">
                     <li className="flex items-center gap-2">
-                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full "></span>경기지역화폐 가맹점 리스트 지도 확인
+                        <span>•</span>
+                        경기지역화폐 가맹점 현황을 지도 기반으로 시각화하여 위치를 손쉽게 확인
                     </li>
                     <li className="flex items-center gap-2">
-                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full "></span>경기지역화폐 가맹점 차별거래 신고
+                        <span>•</span>
+                        가맹점 데이터를 카테고리별로 체계적으로 분류 및 관리
+                    </li>
+                    <li className="flex items-center gap-2">
+                        <span>•</span>
+                        키워드 기반 검색 기능으로 특정 가맹점 정보 조회
+                    </li>
+                    <li className="flex items-center gap-2">
+                        <span>•</span>
+                        경기지역화폐 가맹점 내 차별거래 사례 신고
                     </li>
                 </ul>
             </div>
@@ -63,10 +73,26 @@ export function GMoney() {
                 <p className="text-[#519AD6] font-bold md:text-xl text-lg">개발 내용</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {[
-                        { img: '/image/g_money/img_main.png', title: '메인 화면', desc: ['메인 화면 UI 구현'] },
-                        { img: '/image/g_money/img02.png', title: '카카오 로그인', desc: ['카카오 로그인 API 연동'] },
-                        { img: '/image/g_money/img01.png', title: '차별거래 신고', desc: ['Firebase를 활용해 차별거래 신고 기능 구현', 'Daum Postcode API를 이용해 우편번호 및 주소 검색 기능 제공', 'react-hook-form + yup을 이용한 실시간 유효성 검증'] },
-                        { img: '/image/g_money/img03.png', title: '가맹점 리스트', desc: ['입력한 키워드 기반으로 가맹점 이름 검색', 'Material-UI Select 컴포넌트를 활용하여 지역 선택 기능 구현', 'Kakao Map API를 활용하여 선택된 가맹점 위치 마커 표시', '지역 선택 시 API 호출, 검색어 입력 시 지도와 리스트 동기화'] },
+                        {
+                            img: '/image/g_money/img_main_v2.png',
+                            title: '메인 화면',
+                            desc: ['메인 화면 UI 구현 및 직관적 레이아웃 설계', '지역화폐 사용 가능 매장 정보를 CSS 애니메이션으로 시각화', '핵심 기능 메뉴를 빠르게 탐색 가능'],
+                        },
+                        {
+                            img: '/image/g_money/img02.png',
+                            title: '카카오 로그인',
+                            desc: ['카카오 OAuth API 연동을 통한 간편 로그인 기능 구현'],
+                        },
+                        {
+                            img: '/image/g_money/img01.png',
+                            title: '차별거래 신고',
+                            desc: ['Firebase를 활용한 차별거래 신고 기능 구현', 'Daum Postcode API로 우편번호 및 주소 자동 검색', 'react-hook-form과 yup을 활용한 실시간 유효성 검증'],
+                        },
+                        {
+                            img: '/image/g_money/img03.png',
+                            title: '가맹점 리스트',
+                            desc: ['입력된 키워드 기반으로 가맹점 이름 검색', 'Material-UI Select 컴포넌트를 활용한 지역 선택 기능 구현', 'Kakao Map API를 통해 선택된 가맹점 위치 마커 표시', '지역 선택 시 API 호출, 검색어 입력 시 지도와 리스트 동기화', '지역별 카테고리 생성 및 체계적 분류'],
+                        },
                     ].map((item, i) => (
                         <div key={i}>
                             <img className="w-full mb-2 rounded-md shadow-[2px_2px_6px_rgba(0,0,0,0.3)]" src={item.img} alt={item.title} />
@@ -74,7 +100,7 @@ export function GMoney() {
                             <ul className="space-y-1">
                                 {item.desc.map((el, idx) => (
                                     <li key={idx} className="flex gap-2">
-                                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full mt-2"></span>
+                                        <span>•</span>
                                         {el}
                                     </li>
                                 ))}
@@ -82,6 +108,32 @@ export function GMoney() {
                         </div>
                     ))}
                 </div>
+            </div>
+
+            {/* ui 변경 내용 */}
+            <div className="space-y-2">
+                <p className="text-[#519AD6] font-bold md:text-xl text-lg">UI 디자인 개선 사항</p>
+
+                <div className="flex items-center justify-between flex-col md:flex-row">
+                    <img className="md:w-[47%] w-full mb-2 rounded-md shadow-[2px_2px_6px_rgba(0,0,0,0.3)]" src="/image/g_money/img_main.png" alt="메인 화면 변경 전" />
+                    <span className="text-xl">➡︎</span>
+                    <img className="md:w-[47%] w-full mb-2 rounded-md shadow-[2px_2px_6px_rgba(0,0,0,0.3)]" src="/image/g_money/img_main_v2.png" alt="메인 화면 변경 후" />
+                </div>
+
+                <ul className="space-y-1">
+                    <li className="flex gap-2">
+                        <span>•</span>
+                        사용자 경험을 고려한 직관적 UI 구조로 전면 개선
+                    </li>
+                    <li className="flex gap-2">
+                        <span>•</span>
+                        현대적이고 깔끔한 시각 디자인 적용
+                    </li>
+                    <li className="flex gap-2">
+                        <span>•</span>
+                        지역화폐 사용 가능 매장 정보를 시각적으로 강조
+                    </li>
+                </ul>
             </div>
 
             {/* 오류 해결 */}
@@ -117,10 +169,10 @@ export function GMoney() {
                 <p className="text-[#519AD6] font-bold md:text-xl text-lg">느낀점</p>
                 <ul>
                     <li className="flex items-center gap-2">
-                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full "></span>데이터 로딩 최적화와 예외 처리의 중요성 체감
+                        <span>•</span>데이터 로딩 최적화와 예외 처리의 중요성 체감
                     </li>
                     <li className="flex items-center gap-2">
-                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full "></span>사용자 경험 중심 API 설계의 중요성 체감
+                        <span>•</span>사용자 경험 중심 API 설계의 중요성 체감
                     </li>
                 </ul>
             </div>
