@@ -76,7 +76,7 @@ export function GMoney() {
                         {
                             img: '/image/g_money/img_main_v2.png',
                             title: '메인 화면',
-                            desc: ['메인 화면 UI 구현 및 직관적 레이아웃 설계', '지역화폐 사용 가능 매장 정보를 CSS 애니메이션으로 시각화', '핵심 기능 메뉴를 빠르게 탐색 가능'],
+                            desc: ['메인 화면 UI 구현 및 직관적 레이아웃 설계', '지역화폐 사용처를 CSS 애니메이션으로 시각화', '핵심 기능 메뉴를 빠르게 탐색 가능'],
                         },
                         {
                             img: '/image/g_money/img02.png',

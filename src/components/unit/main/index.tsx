@@ -23,7 +23,7 @@ export default function Main() {
                         </div>
                         <div className="flex items-center gap-3">
                             <span className="text-lg font-semibold">레벨</span>
-                            <p className="flex-1 px-3 py-2 border border-2 border-[#5A4630] rounded-lg  text-[#5A4630]">Lv.0</p>
+                            <p className="flex-1 px-3 py-2 border border-2 border-[#5A4630] rounded-lg  text-[#5A4630]">Lv.1</p>
                         </div>
                         <div className="flex items-center gap-3">
                             <span className="text-lg font-semibold">전직</span>
