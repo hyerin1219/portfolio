@@ -24,7 +24,7 @@ export default function Career() {
                         <div>
                             <p className="font-semibold">역할</p>
                             <ul className="space-y-1">
-                                <li>• HTML/CSS·사내 라이브러리 기반 콘텐츠 제작 및 유지보수</li>
+                                <li>• HTML/CSS 기반 콘텐츠 제작 및 유지보수</li>
                                 <li>• 양산용 프로토타입 제작</li>
                                 <li>• 웹 접근성 고려&#40;WAI-ARIA, 키보드 네비게이션, 대체 텍스트 &#41;</li>
                             </ul>
