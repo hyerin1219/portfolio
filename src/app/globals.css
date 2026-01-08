@@ -61,6 +61,7 @@ body {
     /* background-color: #fffefa; */
     padding: 2%;
     max-width: 1200px;
+    min-width: 380px;
     height: 100vh;
     margin: 0 auto;
 

@@ -73,6 +73,10 @@ export function Travel_diary() {
                         <span>•</span>
                         간단한 미니 게임(룰렛·주사위) 제공
                     </li>
+                    <li className="flex items-center gap-2">
+                        <span>•</span>
+                        Vercel을 이용한 서비스 배포
+                    </li>
                 </ul>
             </div>
 

@@ -26,8 +26,8 @@ export default function Project() {
     };
 
     return (
-        <section className="w-full md:h-full h-auto">
-            <div className="w-full md:h-full h-auto p-6 border-4  border-[#5A93FF]  bg-[#F7FAFF]  rounded-xl  shadow-[6px_6px_0_0_#A9D8FF]">
+        <section className="w-full ">
+            <div className="w-full  p-6 border-4  border-[#5A93FF]  bg-[#F7FAFF]  rounded-xl  shadow-[6px_6px_0_0_#A9D8FF]">
                 {/* Title Box */}
                 <div className="flex items-center justify-center gap-3 p-2 bg-[#FFE38F] rounded-xl text-xl shadow-[3px_3px_0_0_#FFC824]">
                     <img className="w-8" src="/image/ico_item01.png" alt="" />

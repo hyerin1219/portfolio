@@ -45,19 +45,19 @@ export default function Main() {
                     </div>
 
                     {/* 버튼 */}
-                    <div className="flex justify-center flex-wrap gap-5 mt-8">
-                        <Link href="/aboutMe" className="flex items-center justify-center gap-2 p-2 px-5 bg-[#C5DFFF] rounded-xl shadow-[3px_3px_0_0_#A9D8FF] hover:shadow-[5px_5px_0_0_#A9D8FF] transition-all">
-                            <img className="h-8" src="/image/ico_item07.png" alt="" />
+                    <div className="flex justify-center flex-wrap sm:gap-5 gap-2 mt-8">
+                        <Link href="/aboutMe" className="flex items-center justify-center sm:gap-2 gap-1 p-2 px-4 bg-[#C5DFFF] rounded-xl shadow-[3px_3px_0_0_#A9D8FF] hover:shadow-[5px_5px_0_0_#A9D8FF] transition-all">
+                            <img className="md:h-8 sm:h-5 h-4" src="/image/ico_item07.png" alt="" />
                             <span> About</span>
                         </Link>
 
-                        <Link href="/project" className="flex items-center justify-center gap-2 p-2 px-5 bg-[#C5DFFF] rounded-xl shadow-[3px_3px_0_0_#A9D8FF] hover:shadow-[5px_5px_0_0_#A9D8FF] transition-all">
-                            <img className="h-12" src="/image/ico_item03.png" alt="" />
+                        <Link href="/project" className="flex items-center justify-center sm:gap-2 gap-1 p-2 px-4 bg-[#C5DFFF] rounded-xl shadow-[3px_3px_0_0_#A9D8FF] hover:shadow-[5px_5px_0_0_#A9D8FF] transition-all">
+                            <img className="md:h-12 sm:h-9 h-6" src="/image/ico_item03.png" alt="" />
                             <span> Project</span>
                         </Link>
 
-                        <Link href="/career" className="flex items-center justify-center gap-2 p-2 px-5 bg-[#C5DFFF] rounded-xl shadow-[3px_3px_0_0_#A9D8FF] hover:shadow-[5px_5px_0_0_#A9D8FF] transition-all">
-                            <img className="h-12" src="/image/ico_item02.png" alt="" />
+                        <Link href="/career" className="flex items-center justify-center sm:gap-2 gap-1 p-2 px-4 bg-[#C5DFFF] rounded-xl shadow-[3px_3px_0_0_#A9D8FF] hover:shadow-[5px_5px_0_0_#A9D8FF] transition-all">
+                            <img className="md:h-12 sm:h-9 h-6" src="/image/ico_item02.png" alt="" />
                             <span>Career</span>
                         </Link>
                     </div>

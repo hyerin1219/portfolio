@@ -28,7 +28,7 @@ export default function RootLayout({
         <html lang="ko">
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
                 <Header />
-                <main className="p-5 overflow-hidden overflow-y-auto border-2 border-t-0 border-b-0 bg-white">{children}</main>
+                <main className="p-4 overflow-hidden overflow-y-auto border-2 border-t-0 border-b-0 bg-white">{children}</main>
                 <Footer />
             </body>
         </html>
