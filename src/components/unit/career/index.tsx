@@ -26,7 +26,7 @@ export default function Career() {
                             <ul className="space-y-1">
                                 <li>• HTML/CSS 기반 콘텐츠 제작 및 유지보수</li>
                                 <li>• 양산용 프로토타입 제작</li>
-                                <li>• 웹 접근성 고려&#40;WAI-ARIA, 키보드 네비게이션, 대체 텍스트 &#41;</li>
+                                <li>• 웹 접근성 고려&#40;WAI-ARIA, 키보드 네비게이션, 대체 텍스트 &#41;한 마크업 구조 설계</li>
                             </ul>
                         </div>
 
@@ -34,7 +34,7 @@ export default function Career() {
                             <p className="font-semibold">성과</p>
                             <ul className="space-y-1">
                                 <li>• 전자저작물·디지털 교과서 검정 심사 총 6건 통과</li>
-                                <li>• 사내 라이브러리 신규 기능 제안을 통해 사내 라이브러리 고도화에 기여</li>
+                                <li>• 신규 기능 제안을 통해 프로젝트 고도화에 기여</li>
                             </ul>
                         </div>
                     </div>

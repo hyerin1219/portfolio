@@ -174,7 +174,7 @@ export function BookPath() {
                         <span>•</span> 책갈피 모임 댓글 기능 추가 예정
                     </li>
                     <li className="flex items-center gap-2">
-                        <span>•</span> Firebase Functions을 이용해 배포
+                        <span>•</span> Firebase Functions을 이용한 배포
                     </li>
                 </ul>
             </div>
