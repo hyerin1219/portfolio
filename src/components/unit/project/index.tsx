@@ -46,20 +46,7 @@ export default function Project() {
                                 </p>
 
                                 {/* 이미지 버튼 */}
-                                <button
-                                    onClick={() => handleClick(projectName)}
-                                    style={{ backgroundImage: `url(${imageUrl})` }}
-                                    className="
-                        w-[260px] h-[150px]
-                        md:w-[400px] md:h-[230px]
-                        bg-cover bg-no-repeat bg-center
-                        rounded-lg
-                        border-2 border-[#FFE7E5]
-                        shadow-[3px_3px_0_0_#FF7A70]
-                        hover:shadow-[5px_5px_0_0_#FF7A70]
-                        transition-all
-                    "
-                                />
+                                <button onClick={() => handleClick(projectName)} style={{ backgroundImage: `url(${imageUrl})` }} className=" w-[260px] h-[150px] md:w-[400px] md:h-[230px] bg-cover bg-no-repeat bg-center rounded-lg border-2 border-[#FFE7E5] shadow-[3px_3px_0_0_#FF7A70] hover:shadow-[5px_5px_0_0_#FF7A70] transition-all " />
                             </div>
                         );
                     })}

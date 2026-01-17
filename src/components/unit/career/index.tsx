@@ -4,7 +4,7 @@ export default function Career() {
             {/* 컨텐츠 박스 */}
             <div className=" w-full md:h-full h-auto p-6 border-4  border-[#5A93FF]  bg-[#F7FAFF]  rounded-xl  shadow-[6px_6px_0_0_#A9D8FF]">
                 <div className="flex justify-center items-center gap-3 mb-6 p-3  bg-[#FFE38F] rounded-xl text-xl shadow-[3px_3px_0_0_#FFC824]">
-                    <img className="h-12" src="/image/ico_item05.png" alt="" />
+                    <img className="h-12" src="/image/ico_item05.png" alt="모험 기록 아이콘" />
                     <span className="sm:text-xl font-bold text-lg text-center ">모험 기록 &#40;Career Log &#41;</span>
                 </div>
 

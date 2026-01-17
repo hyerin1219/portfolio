@@ -1,9 +1,6 @@
-import AsciiMotion from './ascii';
-
 export default function Footer() {
     return (
         <footer className="border-2 p-3 h-[75px]  bg-white">
-            {/* <AsciiMotion /> */}
             <div>
                 <div>JEONG HYE RIN 정혜린 </div>
                 <div>gpfls662@gmail.com</div>

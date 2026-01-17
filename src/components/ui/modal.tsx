@@ -42,7 +42,7 @@ export function Modal({ setShowModal, selectedProject, Projects }: ModalProps) {
 
     return (
         <AnimatePresence>
-            <div onClick={handleOverlayClick} className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+            <div onClick={handleOverlayClick} className="fixed inset-0 bg-black/50 flex items-center justify-center z-50" role="dialog">
                 <motion.div className="relative w-[92%] h-[90%] border border-black rounded-md shadow-[6px_6px_0_0_rgba(0,0,0,0.5)] overflow-hidden font-mono  bg-gray-50 rounded-lg " initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.8 }} transition={{ duration: 0.25 }}>
                     {selectedProject && <HeaderBar page={selectedProject} />}
                     {/* 닫기 버튼 (오른쪽 상단) */}

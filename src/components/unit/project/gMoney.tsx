@@ -145,7 +145,7 @@ export function GMoney() {
                         <span className="font-semibold">오류 1</span> : 지도가 로드되지 않는 문제
                     </p>
                     <p>
-                        <span className="font-semibold">현상</span> : 페이지 처음 로딩 시 모든 API 데이터를 한 번에 불러와 초기 로딩 속도가 느림
+                        <span className="font-semibold">현상</span> : 폐업된 매장에 대한 데이터 값 누락으로 인한 오류로 지도가 로드되지 않음
                     </p>
                     <p>
                         <span className="font-semibold">해결</span> : API 데이터 일부 값 누락으로 마커 생성 실패 확인 후 누락 데이터 제외
@@ -156,7 +156,7 @@ export function GMoney() {
                         <span className="font-semibold">오류 2</span> : 페이지 로딩 문제
                     </p>
                     <p>
-                        <span className="font-semibold">현상</span> : 특정 시·군에서는 지도 마커 표시 시 로딩 실패
+                        <span className="font-semibold">현상</span> : 페이지 처음 로딩 시 모든 API 데이터를 한 번에 불러와 초기 로딩 속도가 느림
                     </p>
                     <p>
                         <span className="font-semibold">해결</span> : 시·군별 카테고리로 데이터 분리 후 필요한 API만 호출하도록 수정
