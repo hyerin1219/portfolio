@@ -94,12 +94,12 @@ export function BookPath() {
                         {
                             img: '/image/book_path/img01.png',
                             title: '독후감 CRUD 기능',
-                            desc: ['Firebase를 활용한 CRUD 구현', 'Google OAuth 기반 유저 인증 처리', 'react-hook-form을 통한 입력값 유효성 검증', '등록 모드와 수정 모드를 구분하여 관리'],
+                            desc: ['Firebase를 활용한 CRUD 구현', 'Google OAuth 기반 유저 인증 처리', 'react-hook-form을 통한 입력값 유효성 검증', '등록 모드와 수정 모드를 구분하여 관리', 'Gemini API 기반 독후감 문체 교정 및 자동 맞춤법 검사 기능 개발'],
                         },
                         {
                             img: '/image/book_path/img02.png',
                             title: '내가 작성한 독후감 보기',
-                            desc: ['Google 로그인 기반 유저 개인 데이터 조회 및 렌더링', '동적 라우팅 [isbn].tsx 파일을 통해 각 도서의 고유 isbn 값에 따라 독후감 상세 페이지를 동적으로 렌더링하도록 구현'],
+                            desc: ['Google 로그인 기반 유저 개인 데이터 조회 및 렌더링', '동적 라우팅 [isbn].tsx 파일을 통해 각 도서의 고유 isbn 값에 따라 독후감 상세 페이지를 동적으로 렌더링하도록 구현', '월별 독서량을 Recharts 플러그인으로 구현'],
                         },
                         {
                             img: '/image/book_path/img05.png',

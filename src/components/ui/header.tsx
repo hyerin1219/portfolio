@@ -4,7 +4,7 @@ export default function Header() {
     return (
         <header className="flex justify-between items-center border-2 p-3 h-[60px]  bg-white">
             <h1 className="md:text-3xl sm:text-xl text-lg  font-bold hover:bg-[#5A93FF] hover:text-white">
-                <Link href="/">HeyRin Portfolio</Link>
+                <Link href="/">HyeRin Portfolio</Link>
             </h1>
 
             <div className="flex md:gap-5 sm:gap-3 gap-1">
