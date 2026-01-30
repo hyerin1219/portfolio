@@ -54,6 +54,9 @@ export function BookPath() {
                     <li className="flex items-center gap-2">
                         <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full "></span>독서 모임 생성, 가입, 게시글 관리 기능 설계
                     </li>
+                    <li className="flex items-center gap-2">
+                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full "></span>Google Gemini API를 통한 문법 검사 및 문장 교정 기능 구현
+                    </li>
                 </ul>
             </div>
 

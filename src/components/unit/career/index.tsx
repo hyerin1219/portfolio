@@ -13,7 +13,7 @@ export default function Career() {
                     <div className="space-y-2">
                         <div className="flex items-start gap-2  flex-col sm:flex-row sm:items-center">
                             <span className="text-gray-600">2023.03 ~ 2025.06</span>
-                            <span className="font-bold text-[#2857A4]"> &#40;주 &#41;어벤저스 | 주임 · 퍼블리셔</span>
+                            <span className="font-bold text-[#2857A4]"> &#40;주&#41;어벤저스 | 주임 · 퍼블리셔</span>
                         </div>
 
                         <div>
