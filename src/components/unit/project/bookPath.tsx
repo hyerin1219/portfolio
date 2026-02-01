@@ -82,7 +82,7 @@ export function BookPath() {
                         {
                             img: '/image/book_path/img_main_ver2.png',
                             title: '메인 화면',
-                            desc: ["최신 등록 기준 '오늘의 책 추천' 기능을 Embla Carousel 라이브러리를 활용한 슬라이드 컴포넌트로 구현", '로그인한 사용자 기준으로 월별 독서량을 Recharts 플러그인으로 구현', '검색어를 router query를 이용하여 검색 페이지로 이동한 뒤 결과가 보여지게 구현', '햄버거 버튼을 이용한 메뉴바 구현'],
+                            desc: ["최신 등록 기준 '오늘의 책 추천' 기능을 Embla Carousel 라이브러리를 활용한 슬라이드 컴포넌트로 구현", '로그인한 사용자 기준으로 연도별, 월별 독서량을 Recharts 플러그인으로 구현', '검색어를 router query를 이용하여 검색 페이지로 이동한 뒤 결과가 보여지게 구현', '햄버거 버튼을 이용한 메뉴바 구현'],
                         },
                         {
                             img: '/image/book_path/img03.png',
@@ -97,12 +97,18 @@ export function BookPath() {
                         {
                             img: '/image/book_path/img01.png',
                             title: '독후감 CRUD 기능',
-                            desc: ['Firebase를 활용한 CRUD 구현', 'Google OAuth 기반 유저 인증 처리', 'react-hook-form을 통한 입력값 유효성 검증', '등록 모드와 수정 모드를 구분하여 관리', 'Gemini API 기반 독후감 문체 교정 및 자동 맞춤법 검사 기능 개발'],
+                            desc: ['Firebase를 활용한 CRUD 구현', 'Google OAuth 기반 유저 인증 처리', 'react-hook-form을 통한 입력값 유효성 검증', '등록 모드와 수정 모드를 구분하여 관리'],
+                        },
+
+                        {
+                            img: '/image/book_path/img08.png',
+                            title: 'AI 기반 문장 교정 시스템',
+                            desc: ['Google Gemini API를 연동하여 실시간 맞춤법, 문장 교정 기능', '결과 복사하기 클릭 시 클립보드 복사로 독후감에 바로 반영 가능'],
                         },
                         {
                             img: '/image/book_path/img02.png',
                             title: '내가 작성한 독후감 보기',
-                            desc: ['Google 로그인 기반 유저 개인 데이터 조회 및 렌더링', '동적 라우팅 [isbn].tsx 파일을 통해 각 도서의 고유 isbn 값에 따라 독후감 상세 페이지를 동적으로 렌더링하도록 구현', '월별 독서량을 Recharts 플러그인으로 구현'],
+                            desc: ['Google 로그인 기반 유저 개인 데이터 조회 및 렌더링', '동적 라우팅 [isbn].tsx 파일을 통해 각 도서의 고유 isbn 값에 따라 독후감 상세 페이지를 동적으로 렌더링하도록 구현', '연도별, 월별 독서량을 Recharts 플러그인으로 구현'],
                         },
                         {
                             img: '/image/book_path/img05.png',
@@ -149,9 +155,12 @@ export function BookPath() {
                         <span>•</span>
                         주요 기능을 한눈에 파악할 수 있도록 전체 메뉴 추가
                     </li>
+                    <li className="flex gap-2">
+                        <span>•</span>책 카드 리디자인
+                    </li>
                     <li className="flex  gap-2">
                         <span>•</span>
-                        콘텐츠 추가 — 사용자 월별 독후감 작성 양, 메인 페이지 책 검색 기능 제공
+                        콘텐츠 추가 — 사용자 연도별, 월별 독후감 작성 양, 메인 페이지 책 검색 기능 제공
                     </li>
                 </ul>
             </div>
@@ -174,10 +183,13 @@ export function BookPath() {
                 <p className="text-[#519AD6] font-bold md:text-xl text-lg ">향후 계획</p>
                 <ul>
                     <li className="flex items-center gap-2">
-                        <span>•</span> 책갈피 모임 댓글 기능 추가 예정
+                        <span>•</span> 소셜 인터렉션 강화: 독서 모임 내 실시간 댓글 기능 추가
                     </li>
                     <li className="flex items-center gap-2">
-                        <span>•</span> Firebase Functions을 이용한 배포
+                        <span>•</span> 정식 배포: Vercel을 통한 자동 배포 환경 구축
+                    </li>
+                    <li className="flex items-center gap-2">
+                        <span>•</span> 성능 최적화: 렌더링 성능 개선
                     </li>
                 </ul>
             </div>
