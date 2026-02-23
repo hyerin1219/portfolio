@@ -9,7 +9,7 @@ export function BookPath() {
             {/* 소개 */}
             <div className="space-y-2">
                 <p className="text-[#519AD6] font-bold md:text-xl text-lg ">소개</p>
-                <p>읽은 책을 선택하고 평가하며 독후감을 작성할 수 있고, 독서 모임을 생성하여 생각을 공유할 수 있는 플랫폼을 반응형으로 제작했습니다.</p>
+                <p>읽은 책을 선택하고 평가하며 독후감을 작성할 수 있고, 독서 모임을 생성하여 생각을 공유할 수 있는 플랫폼 입니다.</p>
             </div>
 
             {/* 기간 / 인원 */}

@@ -9,7 +9,7 @@ export function Travel_diary() {
             {/* 소개 */}
             <div className="space-y-2">
                 <p className="text-[#519AD6] font-bold md:text-xl text-lg">소개</p>
-                <p>방문할 예정이거나 다녀온 여행지를 지도에 표시하고, 날짜와 함께 여행 일기를 기록할 수 있는 서비스입니다.</p>
+                <p>방문할 예정이거나 다녀온 여행지를 지도에 표시하고, 날짜와 함께 여행 일기를 기록할 수 있는 서비스 입니다.</p>
             </div>
 
             {/* 기간 / 인원 */}

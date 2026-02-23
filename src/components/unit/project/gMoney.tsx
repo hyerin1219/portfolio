@@ -10,7 +10,7 @@ export function GMoney() {
             {/* 소개 */}
             <div className="space-y-2">
                 <p className="text-[#519AD6] font-bold md:text-xl text-lg">소개</p>
-                <p>경기지역카드 사용자가 가맹점을 검색하고, 차별 거래를 신고할 수 있는 서비스를 제작했습니다.</p>
+                <p>경기지역카드 사용자가 가맹점을 검색, 조회하고, 차별 거래를 신고할 수 있는 서비스 입니다.</p>
             </div>
 
             {/* 기간 / 인원 */}
@@ -43,7 +43,7 @@ export function GMoney() {
                 <ul className="">
                     <li className="flex items-center gap-2">
                         <span>•</span>
-                        경기지역화폐 가맹점 현황을 지도 기반으로 시각화하여 위치를 손쉽게 확인
+                        경기지역화폐 가맹점 현황을 지도 기반으로 시각화하여 확인,
                     </li>
                     <li className="flex items-center gap-2">
                         <span>•</span>
