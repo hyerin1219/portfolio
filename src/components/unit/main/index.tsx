@@ -28,7 +28,7 @@ export default function Main() {
                         <div className="flex items-center gap-3">
                             <span className="text-lg font-semibold">전직</span>
                             <p className="relative flex-1 px-3 py-2 border border-2 border-[#5A4630] rounded-lg  text-[#5A4630]">
-                                프론트엔드 개발자
+                                Frontend Developer
                                 <span
                                     className="absolute top-3 right-5 w-0 h-0 
                                     border-l-[10px] border-l-transparent

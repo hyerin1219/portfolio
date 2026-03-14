@@ -42,20 +42,20 @@ export function BookPath() {
             <div className="space-y-2">
                 <p className="text-[#519AD6] font-bold md:text-xl text-lg ">주요 기능</p>
                 <ul>
-                    <li className="flex items-center gap-2">
-                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full "></span>사용자 맞춤 도서 검색 및 필터링 기능 구현
+                    <li className="flex gap-2">
+                        <span>•</span>사용자 맞춤 도서 검색 및 필터링 기능 구현
                     </li>
-                    <li className="flex items-center gap-2">
-                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full "></span>독후감 CRUD 기능 개발 및 데이터 동기화
+                    <li className="flex gap-2">
+                        <span>•</span>독후감 CRUD 기능 개발 및 데이터 동기화
                     </li>
-                    <li className="flex items-center gap-2">
-                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full "></span>사용자가 작성한 독후감 통합 조회 및 관리 기능 제공
+                    <li className="flex gap-2">
+                        <span>•</span>사용자가 작성한 독후감 통합 조회 및 관리 기능 제공
                     </li>
-                    <li className="flex items-center gap-2">
-                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full "></span>독서 모임 생성, 가입, 게시글 관리 기능 설계
+                    <li className="flex gap-2">
+                        <span>•</span>독서 모임 생성, 가입, 게시글 관리 기능 설계
                     </li>
-                    <li className="flex items-center gap-2">
-                        <span className="flex-shrink-0 inline-block w-[4px] h-[4px] bg-black rounded-full "></span>Google Gemini API를 통한 문법 검사 및 문장 교정 기능 구현
+                    <li className="flex gap-2">
+                        <span>•</span>Google Gemini API를 통한 문법 검사 및 문장 교정 기능 구현
                     </li>
                 </ul>
             </div>
@@ -97,7 +97,7 @@ export function BookPath() {
                         {
                             img: '/image/book_path/img01.png',
                             title: '독후감 CRUD 기능',
-                            desc: ['Firebase를 활용한 CRUD 구현', 'Google OAuth 기반 유저 인증 처리', 'react-hook-form을 통한 입력값 유효성 검증', '등록 모드와 수정 모드를 구분하여 관리'],
+                            desc: ['Firebase를 활용한 CRUD 구현', 'Google OAuth 기반 유저 인증 처리', '등록 모드와 수정 모드를 구분하여 관리'],
                         },
 
                         {
@@ -182,13 +182,13 @@ export function BookPath() {
 
                 <p className="text-[#519AD6] font-bold md:text-xl text-lg ">향후 계획</p>
                 <ul>
-                    <li className="flex items-center gap-2">
+                    <li className="flex gap-2">
                         <span>•</span> 소셜 인터렉션 강화: 독서 모임 내 실시간 댓글 기능 추가
                     </li>
-                    <li className="flex items-center gap-2">
+                    <li className="flex gap-2">
                         <span>•</span> 정식 배포: Vercel을 통한 자동 배포 환경 구축
                     </li>
-                    <li className="flex items-center gap-2">
+                    <li className="flex gap-2">
                         <span>•</span> 성능 최적화: 렌더링 성능 개선
                     </li>
                 </ul>

@@ -65,15 +65,15 @@ export function Travel_diary() {
                         <span>•</span>
                         Google map를 활용하여 여행에 관한 정보를 마커로 등록
                     </li>
-                    <li className="flex items-center gap-2">
+                    <li className="flex gap-2">
                         <span>•</span>
                         사용자가 작성한 여행 일기 목록 조회 및 관리 기능
                     </li>
-                    <li className="flex items-center gap-2">
+                    <li className="flex gap-2">
                         <span>•</span>
                         간단한 미니 게임(룰렛·주사위) 제공
                     </li>
-                    <li className="flex items-center gap-2">
+                    <li className="flex gap-2">
                         <span>•</span>
                         Vercel을 이용한 서비스 배포
                     </li>
@@ -114,12 +114,12 @@ export function Travel_diary() {
                         {
                             img: '/image/travel_diary/img04.png',
                             title: '주사위 굴리기',
-                            desc: ['1~6 사이 랜덤 숫자 출력 기능', 'useAudio 훅과 <audio>태그를 활용해 효과음 재생', 'conic-gradient과 CSS를 활용하여 룰렛 회전 애니메이션 구현', '게임 진행 상태를 관리하여 UI변화를 명확히 표현'],
+                            desc: ['1~6 사이 랜덤 숫자 출력 기능', 'useAudio 커스텀 훅과 <audio>태그를 활용해 효과음 재생', '게임 진행 상태를 관리하여 UI변화를 명확히 표현'],
                         },
                         {
                             img: '/image/travel_diary/img05.png',
                             title: '룰렛 돌리기',
-                            desc: ['랜덤 데이터 출력', '룰렛 아이템 중복 입력 검증', 'Framer Motion을 활용해 주사위 등장 시 자연스러운 애니메이션 적용', 'useAudio 훅과 <audio>태그를 활용해 효과음 재생', '아이템 추가/삭제 기능 제공, 룰렛 회전 중 인터랙션 제한으로 UX 안정화'],
+                            desc: ['랜덤 데이터 출력', '룰렛 아이템 중복 입력 검증', '주사위 등장 시 자연스러운 애니메이션 적용', 'useAudio 커스텀 훅과 <audio>태그를 활용해 효과음 재생', '아이템 추가/삭제 기능 제공, 룰렛 회전 중 인터랙션 제한으로 UX 안정화'],
                         },
                     ].map((item, i) => (
                         <div key={i}>
@@ -200,10 +200,10 @@ export function Travel_diary() {
             <div className="space-y-4">
                 <p className="text-[#519AD6] font-bold md:text-xl text-lg ">느낀점</p>
                 <ul>
-                    <li className="flex items-center gap-2">
+                    <li className="flex gap-2">
                         <span>•</span>리팩토링 과정에서 로직 분리와 상태 관리의 중요성을 깨달음
                     </li>
-                    <li className="flex items-center gap-2">
+                    <li className="flex gap-2">
                         <span>•</span>공통 로직을 Hook으로 관리하니 유지보수성과 재사용성이 크게 향상됨
                     </li>
                 </ul>

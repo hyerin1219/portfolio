@@ -41,19 +41,19 @@ export function GMoney() {
             <div className="space-y-2">
                 <p className="text-[#519AD6] font-bold md:text-xl text-lg">핵심 기능</p>
                 <ul className="">
-                    <li className="flex items-center gap-2">
+                    <li className="flex gap-2">
                         <span>•</span>
                         경기지역화폐 가맹점 현황을 지도 기반으로 시각화하여 확인,
                     </li>
-                    <li className="flex items-center gap-2">
+                    <li className="flex gap-2">
                         <span>•</span>
                         가맹점 데이터를 카테고리별로 체계적으로 분류 및 관리
                     </li>
-                    <li className="flex items-center gap-2">
+                    <li className="flex gap-2">
                         <span>•</span>
                         키워드 기반 검색 기능으로 특정 가맹점 정보 조회
                     </li>
-                    <li className="flex items-center gap-2">
+                    <li className="flex gap-2">
                         <span>•</span>
                         경기지역화폐 가맹점 내 차별거래 사례 신고
                     </li>
@@ -168,10 +168,10 @@ export function GMoney() {
             <div className="space-y-4">
                 <p className="text-[#519AD6] font-bold md:text-xl text-lg">느낀점</p>
                 <ul>
-                    <li className="flex items-center gap-2">
+                    <li className="flex gap-2">
                         <span>•</span>데이터 로딩 최적화와 예외 처리의 중요성 체감
                     </li>
-                    <li className="flex items-center gap-2">
+                    <li className="flex gap-2">
                         <span>•</span>사용자 경험 중심 API 설계의 중요성 체감
                     </li>
                 </ul>

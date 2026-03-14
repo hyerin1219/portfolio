@@ -30,7 +30,7 @@ export default function AboutMe() {
                         <br />- React / TypeScript : 컴포넌트 기반 UI, 타입 안정성
                         <br />- Next.js : 페이지 구조 설계, 동적 라우팅
                         <br />- Tailwind CSS : 일관된 디자인 구성
-                        <br />- firebase : 일관된 디자인 구성
+                        <br />- firebase : 인증 및 데이터 관리
                         <br />- Figma : 개발을 위한 UI 제작
                     </div>
                 </div>
